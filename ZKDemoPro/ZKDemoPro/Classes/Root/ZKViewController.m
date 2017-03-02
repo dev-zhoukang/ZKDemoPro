@@ -8,30 +8,82 @@
 
 #import "ZKViewController.h"
 
+@implementation ZKNavigationBar
+
+@end
+
+// ==== 
+
 @interface ZKViewController ()
 
 @end
 
 @implementation ZKViewController
 
+- (instancetype)init {
+    if (self = [super init]) {
+        [self setup];
+    }
+    return self;
+}
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        [self setup];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSArray *vcs = self.navigationController.childViewControllers;
+    if (vcs.count > 1) {
+        [self setNavigationBackButtonDefault];
+    }
+    self.view.clipsToBounds = YES;
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    self.navigationBar.clipsToBounds = YES;
+    self.navigationBar.translucent = NO;
+    self.navigationBar.barTintColor = KGray_TINT_COLOR;
+    
+    NSShadow *shadow = [NSShadow new];
+    [shadow setShadowColor: [UIColor clearColor]];
+    NSDictionary *dict = @{NSShadowAttributeName:shadow,
+                           NSFontAttributeName:[UIFont systemFontOfSize:17],
+                           NSForegroundColorAttributeName:[UIColor whiteColor]};
+    self.navigationBar.titleTextAttributes = dict;
+    
+    if (self.navigationController) {
+        self.navigationController.navigationBar.clipsToBounds = YES;
+        self.navigationController.navigationBar.translucent = NO;
+        self.navigationController.navigationBar.titleTextAttributes = dict;
+        self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+        [self.navigationController.navigationBar setTitleVerticalPositionAdjustment:-2 forBarMetrics:UIBarMetricsDefault];
+    }
+    
+    [self.view addSubview:self.navigationBar];
+    [self.navigationBar pushNavigationItem:self.myNavigationItem animated:NO];
+    [self.navigationBar makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.right.mas_equalTo(0);
+        make.height.mas_equalTo(topInset);
+    }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setTitle:(NSString *)title
+{
+    self.myNavigationItem.title = title;
+    
+    [super setTitle:title];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setup {
+    self.navigationBar = [ZKNavigationBar new];
+    self.myNavigationItem = [[UINavigationItem alloc] initWithTitle:@""];
+    [self.navigationBar setTitleVerticalPositionAdjustment:-2.f forBarMetrics:UIBarMetricsDefault];
 }
-*/
 
 @end
+
+const CGFloat topInset = 64.f;

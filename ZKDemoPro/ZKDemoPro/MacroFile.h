@@ -163,8 +163,8 @@ FOUNDATION_EXPORT CGFloat AutoFitCellRowHeight(CGFloat baseRowHeight, NSInteger 
 //通用色调的色值
 #define KG_TINT_COLOR                       HexColor(0x4f8e30)       /* 深绿色 */
 #define KG_TINT_HIGHLIGHT_COLOR             HexColor(0x467e2a)       /* 深绿色，高亮效果 */
-//#define KG_TINT_COLOR                       HexColor(0x535353)       /* 深灰色 */
-//#define KG_TINT_HIGHLIGHT_COLOR             HexColor(0x000000)       /* 深灰色，高亮效果 */
+#define KGray_TINT_COLOR                    HexColor(0x535353)       /* 深灰色 */
+#define KGray_TINT_HIGHLIGHT_COLOR          HexColor(0x000000)       /* 深灰色，高亮效果 */
 #define KY_TINT_COLOR                       HexColor(0xf9d942)       /* 浅黄色 */
 #define KY_TINT_HIGHLIGHT_COLOR             HexColor(0xf3d33d)       /* 浅黄色，高亮效果 */
 #define GlobalGreenColor       RGBCOLOR(31.f, 185.f, 34.f)

@@ -18,9 +18,13 @@
 		58F661AC1E67BD4B00CEB6B9 /* ZKHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F661A61E67BD4B00CEB6B9 /* ZKHomeViewController.xib */; };
 		58F661AD1E67BD4B00CEB6B9 /* ZKRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661A81E67BD4B00CEB6B9 /* ZKRootViewController.m */; };
 		58F661AE1E67BD4B00CEB6B9 /* ZKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661AA1E67BD4B00CEB6B9 /* ZKViewController.m */; };
-		58F661B41E67C8FB00CEB6B9 /* NotificationFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661B31E67C8FB00CEB6B9 /* NotificationFile.m */; };
-		58F661B71E67CAF100CEB6B9 /* UserDefaultKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661B61E67CAF100CEB6B9 /* UserDefaultKey.m */; };
 		58F661B91E67DD5600CEB6B9 /* CFunctionImplement.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661B81E67DD5600CEB6B9 /* CFunctionImplement.m */; };
+		58F661BD1E67E4BC00CEB6B9 /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661BC1E67E4BC00CEB6B9 /* UIViewController+Navigation.m */; };
+		58F661EB1E67E66700CEB6B9 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661D71E67E66700CEB6B9 /* NSString+Common.m */; };
+		58F661ED1E67E66700CEB6B9 /* UIButton+New.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661DB1E67E66700CEB6B9 /* UIButton+New.m */; };
+		58F661EF1E67E66700CEB6B9 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661DF1E67E66700CEB6B9 /* UIImage+Common.m */; };
+		58F661F11E67E66700CEB6B9 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661E31E67E66700CEB6B9 /* UIView+Addition.m */; };
+		58F661F21E67E66700CEB6B9 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661E51E67E66700CEB6B9 /* UIView+AutoLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,10 +71,20 @@
 		58F661B01E67C89F00CEB6B9 /* ProjectHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectHeader.h; sourceTree = "<group>"; };
 		58F661B11E67C8D000CEB6B9 /* MacroFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroFile.h; sourceTree = "<group>"; };
 		58F661B21E67C8FB00CEB6B9 /* NotificationFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationFile.h; sourceTree = "<group>"; };
-		58F661B31E67C8FB00CEB6B9 /* NotificationFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationFile.m; sourceTree = "<group>"; };
 		58F661B51E67CAF100CEB6B9 /* UserDefaultKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultKey.h; sourceTree = "<group>"; };
-		58F661B61E67CAF100CEB6B9 /* UserDefaultKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultKey.m; sourceTree = "<group>"; };
 		58F661B81E67DD5600CEB6B9 /* CFunctionImplement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFunctionImplement.m; sourceTree = "<group>"; };
+		58F661BB1E67E4BC00CEB6B9 /* UIViewController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Navigation.h"; sourceTree = "<group>"; };
+		58F661BC1E67E4BC00CEB6B9 /* UIViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Navigation.m"; sourceTree = "<group>"; };
+		58F661D61E67E66700CEB6B9 /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
+		58F661D71E67E66700CEB6B9 /* NSString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
+		58F661DA1E67E66700CEB6B9 /* UIButton+New.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+New.h"; sourceTree = "<group>"; };
+		58F661DB1E67E66700CEB6B9 /* UIButton+New.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+New.m"; sourceTree = "<group>"; };
+		58F661DE1E67E66700CEB6B9 /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Common.h"; sourceTree = "<group>"; };
+		58F661DF1E67E66700CEB6B9 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
+		58F661E21E67E66700CEB6B9 /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
+		58F661E31E67E66700CEB6B9 /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
+		58F661E41E67E66700CEB6B9 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		58F661E51E67E66700CEB6B9 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		A3C5E549514D882AC5209282 /* libPods-ZKDemoPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZKDemoPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -130,11 +144,10 @@
 				58F661B01E67C89F00CEB6B9 /* ProjectHeader.h */,
 				58F661B11E67C8D000CEB6B9 /* MacroFile.h */,
 				58F661B21E67C8FB00CEB6B9 /* NotificationFile.h */,
-				58F661B31E67C8FB00CEB6B9 /* NotificationFile.m */,
 				58F661B51E67CAF100CEB6B9 /* UserDefaultKey.h */,
-				58F661B61E67CAF100CEB6B9 /* UserDefaultKey.m */,
 				58F661B81E67DD5600CEB6B9 /* CFunctionImplement.m */,
 				58F661971E67BBA400CEB6B9 /* Classes */,
+				58F661BE1E67E59700CEB6B9 /* Common */,
 				58F661641E67BB5E00CEB6B9 /* Supporting Files */,
 			);
 			path = ZKDemoPro;
@@ -188,8 +201,43 @@
 				58F661A81E67BD4B00CEB6B9 /* ZKRootViewController.m */,
 				58F661A91E67BD4B00CEB6B9 /* ZKViewController.h */,
 				58F661AA1E67BD4B00CEB6B9 /* ZKViewController.m */,
+				58F661BB1E67E4BC00CEB6B9 /* UIViewController+Navigation.h */,
+				58F661BC1E67E4BC00CEB6B9 /* UIViewController+Navigation.m */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		58F661BE1E67E59700CEB6B9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				58F661BF1E67E60B00CEB6B9 /* Category */,
+				58F661C01E67E60B00CEB6B9 /* ZKCustom */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		58F661BF1E67E60B00CEB6B9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				58F661D61E67E66700CEB6B9 /* NSString+Common.h */,
+				58F661D71E67E66700CEB6B9 /* NSString+Common.m */,
+				58F661DA1E67E66700CEB6B9 /* UIButton+New.h */,
+				58F661DB1E67E66700CEB6B9 /* UIButton+New.m */,
+				58F661DE1E67E66700CEB6B9 /* UIImage+Common.h */,
+				58F661DF1E67E66700CEB6B9 /* UIImage+Common.m */,
+				58F661E21E67E66700CEB6B9 /* UIView+Addition.h */,
+				58F661E31E67E66700CEB6B9 /* UIView+Addition.m */,
+				58F661E41E67E66700CEB6B9 /* UIView+AutoLayout.h */,
+				58F661E51E67E66700CEB6B9 /* UIView+AutoLayout.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		58F661C01E67E60B00CEB6B9 /* ZKCustom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZKCustom;
 			sourceTree = "<group>";
 		};
 		608490F7F9B20FC78A5F1A52 /* Frameworks */ = {
@@ -396,13 +444,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F661ED1E67E66700CEB6B9 /* UIButton+New.m in Sources */,
+				58F661F11E67E66700CEB6B9 /* UIView+Addition.m in Sources */,
+				58F661EF1E67E66700CEB6B9 /* UIImage+Common.m in Sources */,
+				58F661BD1E67E4BC00CEB6B9 /* UIViewController+Navigation.m in Sources */,
+				58F661F21E67E66700CEB6B9 /* UIView+AutoLayout.m in Sources */,
 				58F661691E67BB5E00CEB6B9 /* AppDelegate.m in Sources */,
-				58F661B71E67CAF100CEB6B9 /* UserDefaultKey.m in Sources */,
+				58F661EB1E67E66700CEB6B9 /* NSString+Common.m in Sources */,
 				58F661AD1E67BD4B00CEB6B9 /* ZKRootViewController.m in Sources */,
 				58F661B91E67DD5600CEB6B9 /* CFunctionImplement.m in Sources */,
 				58F661AB1E67BD4B00CEB6B9 /* ZKHomeViewController.m in Sources */,
 				58F661661E67BB5E00CEB6B9 /* main.m in Sources */,
-				58F661B41E67C8FB00CEB6B9 /* NotificationFile.m in Sources */,
 				58F661AE1E67BD4B00CEB6B9 /* ZKViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
