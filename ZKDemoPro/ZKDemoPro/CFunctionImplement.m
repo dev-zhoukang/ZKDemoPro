@@ -40,6 +40,10 @@ UIColor *HexColor(unsigned int hexValue) {
     return [UIColor colorWithRed:((float)(((hexValue) & 0xFF0000) >> 16))/255.0 green:((float)(((hexValue) & 0xFF00) >> 8))/255.0 blue:((float)((hexValue) & 0xFF))/255.0 alpha:1];
 }
 
+CGFloat MainScale() {
+    return [UIScreen mainScreen].scale;
+}
+
 /** 比较系统版本号相关函数 */
 BOOL SystemVersionEqualTo(NSString *version) { return [[[UIDevice currentDevice] systemVersion] compare:version options:NSNumericSearch] == NSOrderedSame; }
 BOOL SystemVersionGreaterThan(NSString *version) { return [[[UIDevice currentDevice] systemVersion] compare:version options:NSNumericSearch] == NSOrderedDescending; }

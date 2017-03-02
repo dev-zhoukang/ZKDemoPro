@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		106E4323C5D9DB83442F648F /* libPods-ZKDemoPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C5E549514D882AC5209282 /* libPods-ZKDemoPro.a */; };
+		58B013BD1E680CE8000D6E2B /* ZKCommonItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013BC1E680CE8000D6E2B /* ZKCommonItemCell.m */; };
+		58B013C01E680D36000D6E2B /* ZKProfileHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013BF1E680D36000D6E2B /* ZKProfileHeaderCell.m */; };
+		58B013C21E680E49000D6E2B /* data_me.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B013C11E680E49000D6E2B /* data_me.plist */; };
 		58F661661E67BB5E00CEB6B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661651E67BB5E00CEB6B9 /* main.m */; };
 		58F661691E67BB5E00CEB6B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661681E67BB5E00CEB6B9 /* AppDelegate.m */; };
 		58F661711E67BB5E00CEB6B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F661701E67BB5E00CEB6B9 /* Assets.xcassets */; };
@@ -52,6 +55,11 @@
 /* Begin PBXFileReference section */
 		065D55B940D504E1559A2F5E /* Pods-ZKDemoPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKDemoPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZKDemoPro/Pods-ZKDemoPro.release.xcconfig"; sourceTree = "<group>"; };
 		08514F0BC6FBEDB00556441A /* Pods-ZKDemoPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKDemoPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZKDemoPro/Pods-ZKDemoPro.debug.xcconfig"; sourceTree = "<group>"; };
+		58B013BB1E680CE8000D6E2B /* ZKCommonItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKCommonItemCell.h; sourceTree = "<group>"; };
+		58B013BC1E680CE8000D6E2B /* ZKCommonItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKCommonItemCell.m; sourceTree = "<group>"; };
+		58B013BE1E680D36000D6E2B /* ZKProfileHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKProfileHeaderCell.h; sourceTree = "<group>"; };
+		58B013BF1E680D36000D6E2B /* ZKProfileHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKProfileHeaderCell.m; sourceTree = "<group>"; };
+		58B013C11E680E49000D6E2B /* data_me.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_me.plist; sourceTree = "<group>"; };
 		58F661611E67BB5E00CEB6B9 /* ZKDemoPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKDemoPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F661651E67BB5E00CEB6B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58F661671E67BB5E00CEB6B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -299,8 +307,13 @@
 		58F661FB1E67F64C00CEB6B9 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				58B013C11E680E49000D6E2B /* data_me.plist */,
 				58F661FC1E67F6B200CEB6B9 /* ZKMeViewController.h */,
 				58F661FD1E67F6B200CEB6B9 /* ZKMeViewController.m */,
+				58B013BB1E680CE8000D6E2B /* ZKCommonItemCell.h */,
+				58B013BC1E680CE8000D6E2B /* ZKCommonItemCell.m */,
+				58B013BE1E680D36000D6E2B /* ZKProfileHeaderCell.h */,
+				58B013BF1E680D36000D6E2B /* ZKProfileHeaderCell.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -436,6 +449,7 @@
 			files = (
 				58F661AC1E67BD4B00CEB6B9 /* ZKHomeBaseViewController.xib in Resources */,
 				58F661741E67BB5E00CEB6B9 /* LaunchScreen.storyboard in Resources */,
+				58B013C21E680E49000D6E2B /* data_me.plist in Resources */,
 				58F661711E67BB5E00CEB6B9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,8 +529,10 @@
 				58F661BD1E67E4BC00CEB6B9 /* UIViewController+Navigation.m in Sources */,
 				58F661F21E67E66700CEB6B9 /* UIView+AutoLayout.m in Sources */,
 				58F661691E67BB5E00CEB6B9 /* AppDelegate.m in Sources */,
+				58B013C01E680D36000D6E2B /* ZKProfileHeaderCell.m in Sources */,
 				58F661EB1E67E66700CEB6B9 /* NSString+Common.m in Sources */,
 				58F661AD1E67BD4B00CEB6B9 /* ZKRootViewController.m in Sources */,
+				58B013BD1E680CE8000D6E2B /* ZKCommonItemCell.m in Sources */,
 				58F662041E67F8D900CEB6B9 /* ZKDiscoverViewController.m in Sources */,
 				58F661B91E67DD5600CEB6B9 /* CFunctionImplement.m in Sources */,
 				58F662071E67F8EA00CEB6B9 /* ZKContactViewController.m in Sources */,

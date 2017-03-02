@@ -44,6 +44,8 @@ FOUNDATION_EXPORT BOOL SystemVersionGreaterThanOrEqualTo(NSString *version);
 FOUNDATION_EXPORT BOOL SystemVersionLessThan(NSString *version);
 FOUNDATION_EXPORT BOOL SystemVersionLessThanOrEqualTo(NSString *version);
 
+FOUNDATION_EXPORT CGFloat MainScale();
+
 #define XcodeBundleVersion  [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
 #define XcodeAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 

@@ -21,5 +21,6 @@
 #import "NSString+Common.h"
 #import "UIImage+Common.h"
 #import "UIView+AutoLayout.h"
+#import "UIView+Addition.h"
 
 #endif /* ProjectHeader_h */
