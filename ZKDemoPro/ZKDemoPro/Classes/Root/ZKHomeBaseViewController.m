@@ -1,15 +1,15 @@
 //
-//  ZKHomeViewController.m
+//  ZKHomeBaseViewController.m
 //  ZKDemoPro
 //
 //  Created by ZK on 17/3/2.
 //  Copyright © 2017年 ZK. All rights reserved.
 //
 
-#import "ZKHomeViewController.h"
+#import "ZKHomeBaseViewController.h"
 #import "ZKHVButton.h"
 
-@interface ZKHomeViewController ()
+@interface ZKHomeBaseViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *tabView;
 @property (strong, nonatomic) IBOutletCollection(ZKHVButton) NSArray *tabBtns;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation ZKHomeViewController
+@implementation ZKHomeBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

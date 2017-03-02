@@ -14,8 +14,8 @@
 		58F661741E67BB5E00CEB6B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F661721E67BB5E00CEB6B9 /* LaunchScreen.storyboard */; };
 		58F6617F1E67BB5E00CEB6B9 /* ZKDemoProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F6617E1E67BB5E00CEB6B9 /* ZKDemoProTests.m */; };
 		58F6618A1E67BB5E00CEB6B9 /* ZKDemoProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661891E67BB5E00CEB6B9 /* ZKDemoProUITests.m */; };
-		58F661AB1E67BD4B00CEB6B9 /* ZKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661A51E67BD4B00CEB6B9 /* ZKHomeViewController.m */; };
-		58F661AC1E67BD4B00CEB6B9 /* ZKHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F661A61E67BD4B00CEB6B9 /* ZKHomeViewController.xib */; };
+		58F661AB1E67BD4B00CEB6B9 /* ZKHomeBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661A51E67BD4B00CEB6B9 /* ZKHomeBaseViewController.m */; };
+		58F661AC1E67BD4B00CEB6B9 /* ZKHomeBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F661A61E67BD4B00CEB6B9 /* ZKHomeBaseViewController.xib */; };
 		58F661AD1E67BD4B00CEB6B9 /* ZKRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661A81E67BD4B00CEB6B9 /* ZKRootViewController.m */; };
 		58F661AE1E67BD4B00CEB6B9 /* ZKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661AA1E67BD4B00CEB6B9 /* ZKViewController.m */; };
 		58F661B91E67DD5600CEB6B9 /* CFunctionImplement.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661B81E67DD5600CEB6B9 /* CFunctionImplement.m */; };
@@ -62,9 +62,9 @@
 		58F661851E67BB5E00CEB6B9 /* ZKDemoProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKDemoProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F661891E67BB5E00CEB6B9 /* ZKDemoProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKDemoProUITests.m; sourceTree = "<group>"; };
 		58F6618B1E67BB5E00CEB6B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58F661A41E67BD4B00CEB6B9 /* ZKHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKHomeViewController.h; sourceTree = "<group>"; };
-		58F661A51E67BD4B00CEB6B9 /* ZKHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKHomeViewController.m; sourceTree = "<group>"; };
-		58F661A61E67BD4B00CEB6B9 /* ZKHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZKHomeViewController.xib; sourceTree = "<group>"; };
+		58F661A41E67BD4B00CEB6B9 /* ZKHomeBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKHomeBaseViewController.h; sourceTree = "<group>"; };
+		58F661A51E67BD4B00CEB6B9 /* ZKHomeBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKHomeBaseViewController.m; sourceTree = "<group>"; };
+		58F661A61E67BD4B00CEB6B9 /* ZKHomeBaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZKHomeBaseViewController.xib; sourceTree = "<group>"; };
 		58F661A71E67BD4B00CEB6B9 /* ZKRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKRootViewController.h; sourceTree = "<group>"; };
 		58F661A81E67BD4B00CEB6B9 /* ZKRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKRootViewController.m; sourceTree = "<group>"; };
 		58F661A91E67BD4B00CEB6B9 /* ZKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKViewController.h; sourceTree = "<group>"; };
@@ -204,9 +204,9 @@
 		58F661A31E67BD4B00CEB6B9 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				58F661A41E67BD4B00CEB6B9 /* ZKHomeViewController.h */,
-				58F661A51E67BD4B00CEB6B9 /* ZKHomeViewController.m */,
-				58F661A61E67BD4B00CEB6B9 /* ZKHomeViewController.xib */,
+				58F661A41E67BD4B00CEB6B9 /* ZKHomeBaseViewController.h */,
+				58F661A51E67BD4B00CEB6B9 /* ZKHomeBaseViewController.m */,
+				58F661A61E67BD4B00CEB6B9 /* ZKHomeBaseViewController.xib */,
 				58F661A71E67BD4B00CEB6B9 /* ZKRootViewController.h */,
 				58F661A81E67BD4B00CEB6B9 /* ZKRootViewController.m */,
 				58F661A91E67BD4B00CEB6B9 /* ZKViewController.h */,
@@ -419,7 +419,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58F661AC1E67BD4B00CEB6B9 /* ZKHomeViewController.xib in Resources */,
+				58F661AC1E67BD4B00CEB6B9 /* ZKHomeBaseViewController.xib in Resources */,
 				58F661741E67BB5E00CEB6B9 /* LaunchScreen.storyboard in Resources */,
 				58F661711E67BB5E00CEB6B9 /* Assets.xcassets in Resources */,
 			);
@@ -504,7 +504,7 @@
 				58F661AD1E67BD4B00CEB6B9 /* ZKRootViewController.m in Sources */,
 				58F661B91E67DD5600CEB6B9 /* CFunctionImplement.m in Sources */,
 				58F661FE1E67F6B200CEB6B9 /* ZKMeViewController.m in Sources */,
-				58F661AB1E67BD4B00CEB6B9 /* ZKHomeViewController.m in Sources */,
+				58F661AB1E67BD4B00CEB6B9 /* ZKHomeBaseViewController.m in Sources */,
 				58F661661E67BB5E00CEB6B9 /* main.m in Sources */,
 				58F661AE1E67BD4B00CEB6B9 /* ZKViewController.m in Sources */,
 				58F661F71E67EDFB00CEB6B9 /* ZKHVButton.m in Sources */,

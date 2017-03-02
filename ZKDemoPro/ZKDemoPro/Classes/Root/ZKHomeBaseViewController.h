@@ -1,5 +1,5 @@
 //
-//  ZKHomeViewController.h
+//  ZKHomeBaseViewController.h
 //  ZKDemoPro
 //
 //  Created by ZK on 17/3/2.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZKHomeViewController : ZKViewController
+@interface ZKHomeBaseViewController : ZKViewController
 
 @property (nonatomic, assign) NSInteger pageIndex;
 

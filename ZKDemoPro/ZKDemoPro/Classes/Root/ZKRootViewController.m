@@ -7,7 +7,7 @@
 //
 
 #import "ZKRootViewController.h"
-#import "ZKHomeViewController.h"
+#import "ZKHomeBaseViewController.h"
 
 @interface ZKRootViewController ()
 
@@ -22,7 +22,7 @@
 }
 
 - (void)setupHomeVC {
-    ZKHomeViewController *homeVC = [ZKHomeViewController new];
+    ZKHomeBaseViewController *homeVC = [ZKHomeBaseViewController new];
     _rootNavigationController = [[UINavigationController alloc] initWithRootViewController:homeVC];
     [_rootNavigationController setNavigationBarHidden:true animated:false];
     
