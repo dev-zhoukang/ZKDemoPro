@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  HGAssistant
+//
+//  Created by ZK on 2017/2/10.
+//  Copyright © 2017年 ZK. All rights reserved.
+//
+
+#define MAS_SHORTHAND
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "ProjectHeader.h"
+#endif

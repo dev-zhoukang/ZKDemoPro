@@ -18,6 +18,9 @@
 		58F661AC1E67BD4B00CEB6B9 /* ZKHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F661A61E67BD4B00CEB6B9 /* ZKHomeViewController.xib */; };
 		58F661AD1E67BD4B00CEB6B9 /* ZKRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661A81E67BD4B00CEB6B9 /* ZKRootViewController.m */; };
 		58F661AE1E67BD4B00CEB6B9 /* ZKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661AA1E67BD4B00CEB6B9 /* ZKViewController.m */; };
+		58F661B41E67C8FB00CEB6B9 /* NotificationFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661B31E67C8FB00CEB6B9 /* NotificationFile.m */; };
+		58F661B71E67CAF100CEB6B9 /* UserDefaultKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661B61E67CAF100CEB6B9 /* UserDefaultKey.m */; };
+		58F661B91E67DD5600CEB6B9 /* CFunctionImplement.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661B81E67DD5600CEB6B9 /* CFunctionImplement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,14 @@
 		58F661A81E67BD4B00CEB6B9 /* ZKRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKRootViewController.m; sourceTree = "<group>"; };
 		58F661A91E67BD4B00CEB6B9 /* ZKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKViewController.h; sourceTree = "<group>"; };
 		58F661AA1E67BD4B00CEB6B9 /* ZKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKViewController.m; sourceTree = "<group>"; };
+		58F661AF1E67C67000CEB6B9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		58F661B01E67C89F00CEB6B9 /* ProjectHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectHeader.h; sourceTree = "<group>"; };
+		58F661B11E67C8D000CEB6B9 /* MacroFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroFile.h; sourceTree = "<group>"; };
+		58F661B21E67C8FB00CEB6B9 /* NotificationFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationFile.h; sourceTree = "<group>"; };
+		58F661B31E67C8FB00CEB6B9 /* NotificationFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationFile.m; sourceTree = "<group>"; };
+		58F661B51E67CAF100CEB6B9 /* UserDefaultKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultKey.h; sourceTree = "<group>"; };
+		58F661B61E67CAF100CEB6B9 /* UserDefaultKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultKey.m; sourceTree = "<group>"; };
+		58F661B81E67DD5600CEB6B9 /* CFunctionImplement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFunctionImplement.m; sourceTree = "<group>"; };
 		A3C5E549514D882AC5209282 /* libPods-ZKDemoPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZKDemoPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,6 +127,13 @@
 			children = (
 				58F661671E67BB5E00CEB6B9 /* AppDelegate.h */,
 				58F661681E67BB5E00CEB6B9 /* AppDelegate.m */,
+				58F661B01E67C89F00CEB6B9 /* ProjectHeader.h */,
+				58F661B11E67C8D000CEB6B9 /* MacroFile.h */,
+				58F661B21E67C8FB00CEB6B9 /* NotificationFile.h */,
+				58F661B31E67C8FB00CEB6B9 /* NotificationFile.m */,
+				58F661B51E67CAF100CEB6B9 /* UserDefaultKey.h */,
+				58F661B61E67CAF100CEB6B9 /* UserDefaultKey.m */,
+				58F661B81E67DD5600CEB6B9 /* CFunctionImplement.m */,
 				58F661971E67BBA400CEB6B9 /* Classes */,
 				58F661641E67BB5E00CEB6B9 /* Supporting Files */,
 			);
@@ -129,6 +147,7 @@
 				58F661701E67BB5E00CEB6B9 /* Assets.xcassets */,
 				58F661751E67BB5E00CEB6B9 /* Info.plist */,
 				58F661651E67BB5E00CEB6B9 /* main.m */,
+				58F661AF1E67C67000CEB6B9 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -378,9 +397,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				58F661691E67BB5E00CEB6B9 /* AppDelegate.m in Sources */,
+				58F661B71E67CAF100CEB6B9 /* UserDefaultKey.m in Sources */,
 				58F661AD1E67BD4B00CEB6B9 /* ZKRootViewController.m in Sources */,
+				58F661B91E67DD5600CEB6B9 /* CFunctionImplement.m in Sources */,
 				58F661AB1E67BD4B00CEB6B9 /* ZKHomeViewController.m in Sources */,
 				58F661661E67BB5E00CEB6B9 /* main.m in Sources */,
+				58F661B41E67C8FB00CEB6B9 /* NotificationFile.m in Sources */,
 				58F661AE1E67BD4B00CEB6B9 /* ZKViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +544,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9S49W485R2;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/ZKDemoPro/PrefixHeader.pch";
 				INFOPLIST_FILE = ZKDemoPro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -536,6 +559,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9S49W485R2;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/ZKDemoPro/PrefixHeader.pch";
 				INFOPLIST_FILE = ZKDemoPro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
