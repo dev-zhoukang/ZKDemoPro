@@ -17,6 +17,34 @@
 		58B013E21E682907000D6E2B /* data_discover.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B013E11E682907000D6E2B /* data_discover.plist */; };
 		58B013E81E682BB4000D6E2B /* ZKProfileHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013E61E682BB4000D6E2B /* ZKProfileHeaderCell.m */; };
 		58B013E91E682BB4000D6E2B /* ZKProfileHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58B013E71E682BB4000D6E2B /* ZKProfileHeaderCell.xib */; };
+		58B014181E6832F4000D6E2B /* USTimelineCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013EE1E6832F4000D6E2B /* USTimelineCommentCell.m */; };
+		58B014191E6832F4000D6E2B /* USTimelineCommentCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013F01E6832F4000D6E2B /* USTimelineCommentCellLayout.m */; };
+		58B0141A1E6832F4000D6E2B /* USTimelineCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013F21E6832F4000D6E2B /* USTimelineCommentView.m */; };
+		58B0141B1E6832F4000D6E2B /* USImageLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013F41E6832F4000D6E2B /* USImageLayoutView.m */; };
+		58B0141C1E6832F4000D6E2B /* USOptionBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013F61E6832F4000D6E2B /* USOptionBarView.m */; };
+		58B0141D1E6832F4000D6E2B /* USTimelineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013F81E6832F4000D6E2B /* USTimelineCell.m */; };
+		58B0141E1E6832F4000D6E2B /* USTimelineCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013FA1E6832F4000D6E2B /* USTimelineCellLayout.m */; };
+		58B0141F1E6832F4000D6E2B /* USCommentBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013FD1E6832F4000D6E2B /* USCommentBarView.m */; };
+		58B014201E6832F4000D6E2B /* faceMap_ch.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B013FF1E6832F4000D6E2B /* faceMap_ch.plist */; };
+		58B014211E6832F4000D6E2B /* USRegularTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014011E6832F4000D6E2B /* USRegularTool.m */; };
+		58B014221E6832F4000D6E2B /* USTextLinePositionModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014031E6832F4000D6E2B /* USTextLinePositionModifier.m */; };
+		58B014231E6832F4000D6E2B /* data_0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B014051E6832F4000D6E2B /* data_0.plist */; };
+		58B014241E6832F4000D6E2B /* data_1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B014061E6832F4000D6E2B /* data_1.plist */; };
+		58B014251E6832F4000D6E2B /* data_10.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B014071E6832F4000D6E2B /* data_10.plist */; };
+		58B014261E6832F4000D6E2B /* data_2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B014081E6832F4000D6E2B /* data_2.plist */; };
+		58B014271E6832F4000D6E2B /* data_3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B014091E6832F4000D6E2B /* data_3.plist */; };
+		58B014281E6832F4000D6E2B /* data_4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B0140A1E6832F4000D6E2B /* data_4.plist */; };
+		58B014291E6832F4000D6E2B /* data_5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B0140B1E6832F4000D6E2B /* data_5.plist */; };
+		58B0142A1E6832F4000D6E2B /* data_6.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B0140C1E6832F4000D6E2B /* data_6.plist */; };
+		58B0142B1E6832F4000D6E2B /* data_7.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B0140D1E6832F4000D6E2B /* data_7.plist */; };
+		58B0142C1E6832F4000D6E2B /* data_8.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B0140E1E6832F4000D6E2B /* data_8.plist */; };
+		58B0142D1E6832F4000D6E2B /* data_9.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B0140F1E6832F4000D6E2B /* data_9.plist */; };
+		58B0142E1E6832F4000D6E2B /* USComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014111E6832F4000D6E2B /* USComment.m */; };
+		58B0142F1E6832F4000D6E2B /* USTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014131E6832F4000D6E2B /* USTimeline.m */; };
+		58B014301E6832F4000D6E2B /* USTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014151E6832F4000D6E2B /* USTimelineViewController.m */; };
+		58B014311E6832F4000D6E2B /* USUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014171E6832F4000D6E2B /* USUser.m */; };
+		58B014341E68333A000D6E2B /* USSafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014331E68333A000D6E2B /* USSafariViewController.m */; };
+		58B014371E683532000D6E2B /* ApplicationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014361E683532000D6E2B /* ApplicationContext.m */; };
 		58F661661E67BB5E00CEB6B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661651E67BB5E00CEB6B9 /* main.m */; };
 		58F661691E67BB5E00CEB6B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661681E67BB5E00CEB6B9 /* AppDelegate.m */; };
 		58F661711E67BB5E00CEB6B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F661701E67BB5E00CEB6B9 /* Assets.xcassets */; };
@@ -76,6 +104,50 @@
 		58B013E51E682BB4000D6E2B /* ZKProfileHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKProfileHeaderCell.h; sourceTree = "<group>"; };
 		58B013E61E682BB4000D6E2B /* ZKProfileHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKProfileHeaderCell.m; sourceTree = "<group>"; };
 		58B013E71E682BB4000D6E2B /* ZKProfileHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZKProfileHeaderCell.xib; sourceTree = "<group>"; };
+		58B013ED1E6832F4000D6E2B /* USTimelineCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USTimelineCommentCell.h; sourceTree = "<group>"; };
+		58B013EE1E6832F4000D6E2B /* USTimelineCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USTimelineCommentCell.m; sourceTree = "<group>"; };
+		58B013EF1E6832F4000D6E2B /* USTimelineCommentCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USTimelineCommentCellLayout.h; sourceTree = "<group>"; };
+		58B013F01E6832F4000D6E2B /* USTimelineCommentCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USTimelineCommentCellLayout.m; sourceTree = "<group>"; };
+		58B013F11E6832F4000D6E2B /* USTimelineCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USTimelineCommentView.h; sourceTree = "<group>"; };
+		58B013F21E6832F4000D6E2B /* USTimelineCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USTimelineCommentView.m; sourceTree = "<group>"; };
+		58B013F31E6832F4000D6E2B /* USImageLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USImageLayoutView.h; sourceTree = "<group>"; };
+		58B013F41E6832F4000D6E2B /* USImageLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USImageLayoutView.m; sourceTree = "<group>"; };
+		58B013F51E6832F4000D6E2B /* USOptionBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USOptionBarView.h; sourceTree = "<group>"; };
+		58B013F61E6832F4000D6E2B /* USOptionBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USOptionBarView.m; sourceTree = "<group>"; };
+		58B013F71E6832F4000D6E2B /* USTimelineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USTimelineCell.h; sourceTree = "<group>"; };
+		58B013F81E6832F4000D6E2B /* USTimelineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USTimelineCell.m; sourceTree = "<group>"; };
+		58B013F91E6832F4000D6E2B /* USTimelineCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USTimelineCellLayout.h; sourceTree = "<group>"; };
+		58B013FA1E6832F4000D6E2B /* USTimelineCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USTimelineCellLayout.m; sourceTree = "<group>"; };
+		58B013FC1E6832F4000D6E2B /* USCommentBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USCommentBarView.h; sourceTree = "<group>"; };
+		58B013FD1E6832F4000D6E2B /* USCommentBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USCommentBarView.m; sourceTree = "<group>"; };
+		58B013FF1E6832F4000D6E2B /* faceMap_ch.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = faceMap_ch.plist; sourceTree = "<group>"; };
+		58B014001E6832F4000D6E2B /* USRegularTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USRegularTool.h; sourceTree = "<group>"; };
+		58B014011E6832F4000D6E2B /* USRegularTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USRegularTool.m; sourceTree = "<group>"; };
+		58B014021E6832F4000D6E2B /* USTextLinePositionModifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USTextLinePositionModifier.h; sourceTree = "<group>"; };
+		58B014031E6832F4000D6E2B /* USTextLinePositionModifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USTextLinePositionModifier.m; sourceTree = "<group>"; };
+		58B014051E6832F4000D6E2B /* data_0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_0.plist; sourceTree = "<group>"; };
+		58B014061E6832F4000D6E2B /* data_1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_1.plist; sourceTree = "<group>"; };
+		58B014071E6832F4000D6E2B /* data_10.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_10.plist; sourceTree = "<group>"; };
+		58B014081E6832F4000D6E2B /* data_2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_2.plist; sourceTree = "<group>"; };
+		58B014091E6832F4000D6E2B /* data_3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_3.plist; sourceTree = "<group>"; };
+		58B0140A1E6832F4000D6E2B /* data_4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_4.plist; sourceTree = "<group>"; };
+		58B0140B1E6832F4000D6E2B /* data_5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_5.plist; sourceTree = "<group>"; };
+		58B0140C1E6832F4000D6E2B /* data_6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_6.plist; sourceTree = "<group>"; };
+		58B0140D1E6832F4000D6E2B /* data_7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_7.plist; sourceTree = "<group>"; };
+		58B0140E1E6832F4000D6E2B /* data_8.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_8.plist; sourceTree = "<group>"; };
+		58B0140F1E6832F4000D6E2B /* data_9.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_9.plist; sourceTree = "<group>"; };
+		58B014101E6832F4000D6E2B /* USComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USComment.h; sourceTree = "<group>"; };
+		58B014111E6832F4000D6E2B /* USComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USComment.m; sourceTree = "<group>"; };
+		58B014121E6832F4000D6E2B /* USTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USTimeline.h; sourceTree = "<group>"; };
+		58B014131E6832F4000D6E2B /* USTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USTimeline.m; sourceTree = "<group>"; };
+		58B014141E6832F4000D6E2B /* USTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USTimelineViewController.h; sourceTree = "<group>"; };
+		58B014151E6832F4000D6E2B /* USTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USTimelineViewController.m; sourceTree = "<group>"; };
+		58B014161E6832F4000D6E2B /* USUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USUser.h; sourceTree = "<group>"; };
+		58B014171E6832F4000D6E2B /* USUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USUser.m; sourceTree = "<group>"; };
+		58B014321E68333A000D6E2B /* USSafariViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USSafariViewController.h; sourceTree = "<group>"; };
+		58B014331E68333A000D6E2B /* USSafariViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USSafariViewController.m; sourceTree = "<group>"; };
+		58B014351E683532000D6E2B /* ApplicationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationContext.h; sourceTree = "<group>"; };
+		58B014361E683532000D6E2B /* ApplicationContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationContext.m; sourceTree = "<group>"; };
 		58F661611E67BB5E00CEB6B9 /* ZKDemoPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKDemoPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F661651E67BB5E00CEB6B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58F661671E67BB5E00CEB6B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,6 +228,8 @@
 		58B013C31E681CBB000D6E2B /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				58B014351E683532000D6E2B /* ApplicationContext.h */,
+				58B014361E683532000D6E2B /* ApplicationContext.m */,
 				58B013CE1E681CFC000D6E2B /* USLog */,
 				58B013C41E681CD0000D6E2B /* DBModel */,
 			);
@@ -189,6 +263,93 @@
 				58B013DF1E682809000D6E2B /* ZKCommonItemViewController.m */,
 			);
 			path = ShareCode;
+			sourceTree = "<group>";
+		};
+		58B013EA1E6832F4000D6E2B /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				58B013EB1E6832F4000D6E2B /* Cell */,
+				58B013FB1E6832F4000D6E2B /* CommentBar */,
+				58B013FE1E6832F4000D6E2B /* RegTool */,
+				58B014041E6832F4000D6E2B /* Source */,
+				58B014101E6832F4000D6E2B /* USComment.h */,
+				58B014111E6832F4000D6E2B /* USComment.m */,
+				58B014121E6832F4000D6E2B /* USTimeline.h */,
+				58B014131E6832F4000D6E2B /* USTimeline.m */,
+				58B014141E6832F4000D6E2B /* USTimelineViewController.h */,
+				58B014151E6832F4000D6E2B /* USTimelineViewController.m */,
+				58B014161E6832F4000D6E2B /* USUser.h */,
+				58B014171E6832F4000D6E2B /* USUser.m */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		58B013EB1E6832F4000D6E2B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				58B013EC1E6832F4000D6E2B /* CommentView */,
+				58B013F31E6832F4000D6E2B /* USImageLayoutView.h */,
+				58B013F41E6832F4000D6E2B /* USImageLayoutView.m */,
+				58B013F51E6832F4000D6E2B /* USOptionBarView.h */,
+				58B013F61E6832F4000D6E2B /* USOptionBarView.m */,
+				58B013F71E6832F4000D6E2B /* USTimelineCell.h */,
+				58B013F81E6832F4000D6E2B /* USTimelineCell.m */,
+				58B013F91E6832F4000D6E2B /* USTimelineCellLayout.h */,
+				58B013FA1E6832F4000D6E2B /* USTimelineCellLayout.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		58B013EC1E6832F4000D6E2B /* CommentView */ = {
+			isa = PBXGroup;
+			children = (
+				58B013ED1E6832F4000D6E2B /* USTimelineCommentCell.h */,
+				58B013EE1E6832F4000D6E2B /* USTimelineCommentCell.m */,
+				58B013EF1E6832F4000D6E2B /* USTimelineCommentCellLayout.h */,
+				58B013F01E6832F4000D6E2B /* USTimelineCommentCellLayout.m */,
+				58B013F11E6832F4000D6E2B /* USTimelineCommentView.h */,
+				58B013F21E6832F4000D6E2B /* USTimelineCommentView.m */,
+			);
+			path = CommentView;
+			sourceTree = "<group>";
+		};
+		58B013FB1E6832F4000D6E2B /* CommentBar */ = {
+			isa = PBXGroup;
+			children = (
+				58B013FC1E6832F4000D6E2B /* USCommentBarView.h */,
+				58B013FD1E6832F4000D6E2B /* USCommentBarView.m */,
+			);
+			path = CommentBar;
+			sourceTree = "<group>";
+		};
+		58B013FE1E6832F4000D6E2B /* RegTool */ = {
+			isa = PBXGroup;
+			children = (
+				58B013FF1E6832F4000D6E2B /* faceMap_ch.plist */,
+				58B014001E6832F4000D6E2B /* USRegularTool.h */,
+				58B014011E6832F4000D6E2B /* USRegularTool.m */,
+				58B014021E6832F4000D6E2B /* USTextLinePositionModifier.h */,
+				58B014031E6832F4000D6E2B /* USTextLinePositionModifier.m */,
+			);
+			path = RegTool;
+			sourceTree = "<group>";
+		};
+		58B014041E6832F4000D6E2B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				58B014051E6832F4000D6E2B /* data_0.plist */,
+				58B014061E6832F4000D6E2B /* data_1.plist */,
+				58B014071E6832F4000D6E2B /* data_10.plist */,
+				58B014081E6832F4000D6E2B /* data_2.plist */,
+				58B014091E6832F4000D6E2B /* data_3.plist */,
+				58B0140A1E6832F4000D6E2B /* data_4.plist */,
+				58B0140B1E6832F4000D6E2B /* data_5.plist */,
+				58B0140C1E6832F4000D6E2B /* data_6.plist */,
+				58B0140D1E6832F4000D6E2B /* data_7.plist */,
+				58B0140E1E6832F4000D6E2B /* data_8.plist */,
+				58B0140F1E6832F4000D6E2B /* data_9.plist */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		58F661581E67BB5E00CEB6B9 = {
@@ -321,6 +482,8 @@
 		58F661C01E67E60B00CEB6B9 /* ZKCustom */ = {
 			isa = PBXGroup;
 			children = (
+				58B014321E68333A000D6E2B /* USSafariViewController.h */,
+				58B014331E68333A000D6E2B /* USSafariViewController.m */,
 				58F661F41E67EDFB00CEB6B9 /* ZKHVButton */,
 			);
 			path = ZKCustom;
@@ -347,6 +510,7 @@
 		58F661F91E67F64C00CEB6B9 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				58B013EA1E6832F4000D6E2B /* Timeline */,
 				58B013E11E682907000D6E2B /* data_discover.plist */,
 				58F662021E67F8D900CEB6B9 /* ZKDiscoverViewController.h */,
 				58F662031E67F8D900CEB6B9 /* ZKDiscoverViewController.m */,
@@ -507,10 +671,22 @@
 			files = (
 				58F661AC1E67BD4B00CEB6B9 /* ZKHomeBaseViewController.xib in Resources */,
 				58B013E21E682907000D6E2B /* data_discover.plist in Resources */,
+				58B0142C1E6832F4000D6E2B /* data_8.plist in Resources */,
 				58F661741E67BB5E00CEB6B9 /* LaunchScreen.storyboard in Resources */,
+				58B0142D1E6832F4000D6E2B /* data_9.plist in Resources */,
 				58B013C21E680E49000D6E2B /* data_me.plist in Resources */,
+				58B014261E6832F4000D6E2B /* data_2.plist in Resources */,
+				58B014281E6832F4000D6E2B /* data_4.plist in Resources */,
+				58B0142B1E6832F4000D6E2B /* data_7.plist in Resources */,
+				58B014291E6832F4000D6E2B /* data_5.plist in Resources */,
+				58B014241E6832F4000D6E2B /* data_1.plist in Resources */,
+				58B014251E6832F4000D6E2B /* data_10.plist in Resources */,
+				58B014201E6832F4000D6E2B /* faceMap_ch.plist in Resources */,
+				58B0142A1E6832F4000D6E2B /* data_6.plist in Resources */,
 				58F661711E67BB5E00CEB6B9 /* Assets.xcassets in Resources */,
 				58B013E91E682BB4000D6E2B /* ZKProfileHeaderCell.xib in Resources */,
+				58B014271E6832F4000D6E2B /* data_3.plist in Resources */,
+				58B014231E6832F4000D6E2B /* data_0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,26 +760,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				58F661ED1E67E66700CEB6B9 /* UIButton+New.m in Sources */,
+				58B0142E1E6832F4000D6E2B /* USComment.m in Sources */,
 				58F661F11E67E66700CEB6B9 /* UIView+Addition.m in Sources */,
+				58B014211E6832F4000D6E2B /* USRegularTool.m in Sources */,
+				58B014341E68333A000D6E2B /* USSafariViewController.m in Sources */,
 				58B013E01E682809000D6E2B /* ZKCommonItemViewController.m in Sources */,
 				58F661EF1E67E66700CEB6B9 /* UIImage+Common.m in Sources */,
 				58F661BD1E67E4BC00CEB6B9 /* UIViewController+Navigation.m in Sources */,
+				58B0141C1E6832F4000D6E2B /* USOptionBarView.m in Sources */,
 				58F661F21E67E66700CEB6B9 /* UIView+AutoLayout.m in Sources */,
 				58B013DA1E68230B000D6E2B /* ZKCommonItemCell.m in Sources */,
 				58F661691E67BB5E00CEB6B9 /* AppDelegate.m in Sources */,
 				58F661EB1E67E66700CEB6B9 /* NSString+Common.m in Sources */,
+				58B0141E1E6832F4000D6E2B /* USTimelineCellLayout.m in Sources */,
 				58F661AD1E67BD4B00CEB6B9 /* ZKRootViewController.m in Sources */,
+				58B0141B1E6832F4000D6E2B /* USImageLayoutView.m in Sources */,
 				58F662041E67F8D900CEB6B9 /* ZKDiscoverViewController.m in Sources */,
+				58B0141A1E6832F4000D6E2B /* USTimelineCommentView.m in Sources */,
+				58B0141D1E6832F4000D6E2B /* USTimelineCell.m in Sources */,
 				58B013D21E681CFC000D6E2B /* USLogger.m in Sources */,
+				58B014181E6832F4000D6E2B /* USTimelineCommentCell.m in Sources */,
 				58F661B91E67DD5600CEB6B9 /* CFunctionImplement.m in Sources */,
 				58F662071E67F8EA00CEB6B9 /* ZKContactViewController.m in Sources */,
 				58B013CD1E681CD0000D6E2B /* DBObject.m in Sources */,
+				58B0142F1E6832F4000D6E2B /* USTimeline.m in Sources */,
 				58F661FE1E67F6B200CEB6B9 /* ZKMeViewController.m in Sources */,
 				58B013D61E681DC1000D6E2B /* NSDate+Common.m in Sources */,
+				58B014371E683532000D6E2B /* ApplicationContext.m in Sources */,
 				58F661AB1E67BD4B00CEB6B9 /* ZKHomeBaseViewController.m in Sources */,
+				58B0141F1E6832F4000D6E2B /* USCommentBarView.m in Sources */,
+				58B014221E6832F4000D6E2B /* USTextLinePositionModifier.m in Sources */,
 				58B013E81E682BB4000D6E2B /* ZKProfileHeaderCell.m in Sources */,
+				58B014311E6832F4000D6E2B /* USUser.m in Sources */,
 				58F661661E67BB5E00CEB6B9 /* main.m in Sources */,
+				58B014301E6832F4000D6E2B /* USTimelineViewController.m in Sources */,
 				58F661AE1E67BD4B00CEB6B9 /* ZKViewController.m in Sources */,
+				58B014191E6832F4000D6E2B /* USTimelineCommentCellLayout.m in Sources */,
 				58F662011E67F8C700CEB6B9 /* ZKHomeViewController.m in Sources */,
 				58F661F71E67EDFB00CEB6B9 /* ZKHVButton.m in Sources */,
 			);

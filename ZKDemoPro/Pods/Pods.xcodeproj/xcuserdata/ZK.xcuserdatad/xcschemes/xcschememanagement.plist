@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>WebViewJavascriptBridge.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YYKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0EE82E3E1F488AB2AEB9FF1523CC3600</key>
+		<key>3B36D522CB58BADC0E2E9CCC93C361AC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1FCF3082B6EC0F1D67190BD914674514</key>
+		<key>3F7BED04FFF7AA032CEC27947A3CB614</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>58DADAC68A17D65CCFE3A9018E4A060E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F6D2C6373F8E8F39217F9213020FC61</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -48,11 +63,6 @@
 			<true/>
 		</dict>
 		<key>9E033EDB5EC0819481B0546434FA577B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DE921A0F5C934B1525DEFBA8E14507E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

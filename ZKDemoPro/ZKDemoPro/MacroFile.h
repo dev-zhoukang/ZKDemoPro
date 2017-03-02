@@ -30,6 +30,8 @@
 #define WindowZoomScale     (SCREEN_WIDTH/320.f)
 #define UniversalZoomScale  (MIN(1.8, WindowZoomScale))  //适配iPad
 
+#define _applicationContext [ApplicationContext sharedContext]
+
 FOUNDATION_EXPORT NSString *NSDocumentPath();
 FOUNDATION_EXPORT NSString *NSResourcePath();
 FOUNDATION_EXPORT UIImage *UIImageNamed(NSString *imageName);

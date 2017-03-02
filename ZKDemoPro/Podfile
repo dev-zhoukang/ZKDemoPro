@@ -8,4 +8,5 @@ pod 'AMap3DMap'  #3D地图 SDK
 pod 'AMapSearch'
 pod 'AMapLocation'
 pod 'YYKit'
+pod 'WebViewJavascriptBridge', '~> 5.0'
 end
