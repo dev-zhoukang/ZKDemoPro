@@ -613,6 +613,7 @@
 				58F661901E67BB5E00CEB6B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		58F661911E67BB5E00CEB6B9 /* Build configuration list for PBXNativeTarget "ZKDemoProTests" */ = {
 			isa = XCConfigurationList;
@@ -621,6 +622,7 @@
 				58F661931E67BB5E00CEB6B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		58F661941E67BB5E00CEB6B9 /* Build configuration list for PBXNativeTarget "ZKDemoProUITests" */ = {
 			isa = XCConfigurationList;
@@ -629,6 +631,7 @@
 				58F661961E67BB5E00CEB6B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
