@@ -1,22 +1,22 @@
 //
-//  ZKMeViewController.m
+//  ZKHomeViewController.m
 //  ZKDemoPro
 //
 //  Created by ZK on 17/3/2.
 //  Copyright © 2017年 ZK. All rights reserved.
 //
 
-#import "ZKMeViewController.h"
+#import "ZKHomeViewController.h"
 
-@interface ZKMeViewController ()
+@interface ZKHomeViewController ()
 
 @end
 
-@implementation ZKMeViewController
+@implementation ZKHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"关于我";
+    self.title = @"首页";
 }
 
 @end

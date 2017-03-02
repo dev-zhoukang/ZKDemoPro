@@ -46,12 +46,13 @@
     
     self.navigationBar.clipsToBounds = YES;
     self.navigationBar.translucent = NO;
-    self.navigationBar.barTintColor = KGray_TINT_COLOR;
+    self.navigationBar.barTintColor = [UIColor clearColor];
+    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"bg_nav"] forBarMetrics:UIBarMetricsDefault];
     
     NSShadow *shadow = [NSShadow new];
     [shadow setShadowColor: [UIColor clearColor]];
     NSDictionary *dict = @{NSShadowAttributeName:shadow,
-                           NSFontAttributeName:[UIFont systemFontOfSize:17],
+                           NSFontAttributeName:[UIFont systemFontOfSize:18],
                            NSForegroundColorAttributeName:[UIColor whiteColor]};
     self.navigationBar.titleTextAttributes = dict;
     
@@ -71,8 +72,7 @@
     }];
 }
 
-- (void)setTitle:(NSString *)title
-{
+- (void)setTitle:(NSString *)title {
     self.myNavigationItem.title = title;
     
     [super setTitle:title];
@@ -81,7 +81,11 @@
 - (void)setup {
     self.navigationBar = [ZKNavigationBar new];
     self.myNavigationItem = [[UINavigationItem alloc] initWithTitle:@""];
-    [self.navigationBar setTitleVerticalPositionAdjustment:-2.f forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setTitleVerticalPositionAdjustment:-1.f forBarMetrics:UIBarMetricsDefault];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 @end

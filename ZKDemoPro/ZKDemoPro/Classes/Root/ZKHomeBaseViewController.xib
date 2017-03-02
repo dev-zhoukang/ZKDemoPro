@@ -44,14 +44,23 @@
                         <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6N-4P-TkI" customClass="ZKHVButton">
                             <rect key="frame" x="94" y="0.0" width="93.5" height="50"/>
                             <color key="backgroundColor" red="0.96078431369999995" green="0.81568627449999997" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="si0-vS-9ia"/>
+                            </connections>
                         </button>
                         <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJH-EZ-87Q" customClass="ZKHVButton">
                             <rect key="frame" x="187.5" y="0.0" width="94" height="50"/>
                             <color key="backgroundColor" red="0.86041245150000001" green="0.5" blue="0.48026086909999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="OPc-NW-YWd"/>
+                            </connections>
                         </button>
                         <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdt-Cl-B9q" customClass="ZKHVButton">
                             <rect key="frame" x="281.5" y="0.0" width="93.5" height="50"/>
                             <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="zim-xP-VNA"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

@@ -8,6 +8,10 @@
 
 #import "ZKHomeBaseViewController.h"
 #import "ZKHVButton.h"
+#import "ZKHomeViewController.h"
+#import "ZKContactViewController.h"
+#import "ZKDiscoverViewController.h"
+#import "ZKMeViewController.h"
 
 @interface ZKHomeBaseViewController ()
 
@@ -24,8 +28,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navigationBar.hidden = true;
     [self setupTabBtns];
     [self setupPageViewController];
+    [self setPageIndex:0];
 }
 
 - (void)setupPageViewController {
@@ -84,6 +91,18 @@
         btn.selected = btn.tag == pageIndex;
         btn.userInteractionEnabled = !btn.isSelected;
     }];
+}
+
+- (NSArray<UIViewController *> *)viewControllers {
+    if (!_viewControllers) {
+        _viewControllers = @[
+                             [ZKHomeViewController new],
+                             [ZKContactViewController new],
+                             [ZKDiscoverViewController new],
+                             [ZKMeViewController new]
+                             ];
+    }
+    return _viewControllers;
 }
 
 @end
