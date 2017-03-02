@@ -81,7 +81,7 @@
 - (void)setup {
     self.navigationBar = [ZKNavigationBar new];
     self.myNavigationItem = [[UINavigationItem alloc] initWithTitle:@""];
-    [self.navigationBar setTitleVerticalPositionAdjustment:-1.f forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setTitleVerticalPositionAdjustment:-2.f forBarMetrics:UIBarMetricsDefault];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {

@@ -6,8 +6,8 @@
 //  Copyright © 2017年 ZK. All rights reserved.
 //
 
-#import "ZKViewController.h"
+#import "ZKCommonItemViewController.h"
 
-@interface ZKMeViewController : ZKViewController
+@interface ZKMeViewController : ZKCommonItemViewController
 
 @end

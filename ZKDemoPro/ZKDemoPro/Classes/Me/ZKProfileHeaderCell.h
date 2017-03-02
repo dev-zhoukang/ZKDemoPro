@@ -10,4 +10,6 @@
 
 @interface ZKProfileHeaderCell : UITableViewCell
 
++ (instancetype)cellWithTableView:(UITableView *)tableView;
+
 @end

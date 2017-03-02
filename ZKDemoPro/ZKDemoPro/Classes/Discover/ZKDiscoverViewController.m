@@ -17,6 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"发现";
+    [self requestData];
+}
+
+- (void)requestData {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"data_discover" ofType:@"plist"];
+        self.dataSource = [NSArray arrayWithContentsOfFile:filePath];
+       dispatch_async(dispatch_get_main_queue(), ^{
+           [self.tableView reloadData];
+       });
+    });
 }
 
 @end

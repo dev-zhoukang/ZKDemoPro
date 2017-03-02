@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		106E4323C5D9DB83442F648F /* libPods-ZKDemoPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C5E549514D882AC5209282 /* libPods-ZKDemoPro.a */; };
-		58B013BD1E680CE8000D6E2B /* ZKCommonItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013BC1E680CE8000D6E2B /* ZKCommonItemCell.m */; };
-		58B013C01E680D36000D6E2B /* ZKProfileHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013BF1E680D36000D6E2B /* ZKProfileHeaderCell.m */; };
 		58B013C21E680E49000D6E2B /* data_me.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B013C11E680E49000D6E2B /* data_me.plist */; };
 		58B013CD1E681CD0000D6E2B /* DBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013CA1E681CD0000D6E2B /* DBObject.m */; };
 		58B013D21E681CFC000D6E2B /* USLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013D01E681CFC000D6E2B /* USLogger.m */; };
 		58B013D61E681DC1000D6E2B /* NSDate+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013D51E681DC1000D6E2B /* NSDate+Common.m */; };
+		58B013DA1E68230B000D6E2B /* ZKCommonItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013D91E68230B000D6E2B /* ZKCommonItemCell.m */; };
+		58B013E01E682809000D6E2B /* ZKCommonItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013DF1E682809000D6E2B /* ZKCommonItemViewController.m */; };
+		58B013E21E682907000D6E2B /* data_discover.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B013E11E682907000D6E2B /* data_discover.plist */; };
+		58B013E81E682BB4000D6E2B /* ZKProfileHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013E61E682BB4000D6E2B /* ZKProfileHeaderCell.m */; };
+		58B013E91E682BB4000D6E2B /* ZKProfileHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58B013E71E682BB4000D6E2B /* ZKProfileHeaderCell.xib */; };
 		58F661661E67BB5E00CEB6B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661651E67BB5E00CEB6B9 /* main.m */; };
 		58F661691E67BB5E00CEB6B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661681E67BB5E00CEB6B9 /* AppDelegate.m */; };
 		58F661711E67BB5E00CEB6B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F661701E67BB5E00CEB6B9 /* Assets.xcassets */; };
@@ -58,10 +61,6 @@
 /* Begin PBXFileReference section */
 		065D55B940D504E1559A2F5E /* Pods-ZKDemoPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKDemoPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZKDemoPro/Pods-ZKDemoPro.release.xcconfig"; sourceTree = "<group>"; };
 		08514F0BC6FBEDB00556441A /* Pods-ZKDemoPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKDemoPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZKDemoPro/Pods-ZKDemoPro.debug.xcconfig"; sourceTree = "<group>"; };
-		58B013BB1E680CE8000D6E2B /* ZKCommonItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKCommonItemCell.h; sourceTree = "<group>"; };
-		58B013BC1E680CE8000D6E2B /* ZKCommonItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKCommonItemCell.m; sourceTree = "<group>"; };
-		58B013BE1E680D36000D6E2B /* ZKProfileHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKProfileHeaderCell.h; sourceTree = "<group>"; };
-		58B013BF1E680D36000D6E2B /* ZKProfileHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKProfileHeaderCell.m; sourceTree = "<group>"; };
 		58B013C11E680E49000D6E2B /* data_me.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_me.plist; sourceTree = "<group>"; };
 		58B013C91E681CD0000D6E2B /* DBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBObject.h; sourceTree = "<group>"; };
 		58B013CA1E681CD0000D6E2B /* DBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBObject.m; sourceTree = "<group>"; };
@@ -69,6 +68,14 @@
 		58B013D01E681CFC000D6E2B /* USLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USLogger.m; sourceTree = "<group>"; };
 		58B013D41E681DC1000D6E2B /* NSDate+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Common.h"; sourceTree = "<group>"; };
 		58B013D51E681DC1000D6E2B /* NSDate+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Common.m"; sourceTree = "<group>"; };
+		58B013D81E68230B000D6E2B /* ZKCommonItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKCommonItemCell.h; sourceTree = "<group>"; };
+		58B013D91E68230B000D6E2B /* ZKCommonItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKCommonItemCell.m; sourceTree = "<group>"; };
+		58B013DE1E682809000D6E2B /* ZKCommonItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKCommonItemViewController.h; sourceTree = "<group>"; };
+		58B013DF1E682809000D6E2B /* ZKCommonItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKCommonItemViewController.m; sourceTree = "<group>"; };
+		58B013E11E682907000D6E2B /* data_discover.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_discover.plist; sourceTree = "<group>"; };
+		58B013E51E682BB4000D6E2B /* ZKProfileHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKProfileHeaderCell.h; sourceTree = "<group>"; };
+		58B013E61E682BB4000D6E2B /* ZKProfileHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKProfileHeaderCell.m; sourceTree = "<group>"; };
+		58B013E71E682BB4000D6E2B /* ZKProfileHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZKProfileHeaderCell.xib; sourceTree = "<group>"; };
 		58F661611E67BB5E00CEB6B9 /* ZKDemoPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKDemoPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F661651E67BB5E00CEB6B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58F661671E67BB5E00CEB6B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -173,6 +180,17 @@
 			path = USLog;
 			sourceTree = "<group>";
 		};
+		58B013D71E68230B000D6E2B /* ShareCode */ = {
+			isa = PBXGroup;
+			children = (
+				58B013D81E68230B000D6E2B /* ZKCommonItemCell.h */,
+				58B013D91E68230B000D6E2B /* ZKCommonItemCell.m */,
+				58B013DE1E682809000D6E2B /* ZKCommonItemViewController.h */,
+				58B013DF1E682809000D6E2B /* ZKCommonItemViewController.m */,
+			);
+			path = ShareCode;
+			sourceTree = "<group>";
+		};
 		58F661581E67BB5E00CEB6B9 = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +263,7 @@
 		58F661971E67BBA400CEB6B9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				58B013D71E68230B000D6E2B /* ShareCode */,
 				58F661F81E67F64C00CEB6B9 /* Contact */,
 				58F661F91E67F64C00CEB6B9 /* Discover */,
 				58F661FA1E67F64C00CEB6B9 /* Home */,
@@ -328,6 +347,7 @@
 		58F661F91E67F64C00CEB6B9 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				58B013E11E682907000D6E2B /* data_discover.plist */,
 				58F662021E67F8D900CEB6B9 /* ZKDiscoverViewController.h */,
 				58F662031E67F8D900CEB6B9 /* ZKDiscoverViewController.m */,
 			);
@@ -349,10 +369,9 @@
 				58B013C11E680E49000D6E2B /* data_me.plist */,
 				58F661FC1E67F6B200CEB6B9 /* ZKMeViewController.h */,
 				58F661FD1E67F6B200CEB6B9 /* ZKMeViewController.m */,
-				58B013BB1E680CE8000D6E2B /* ZKCommonItemCell.h */,
-				58B013BC1E680CE8000D6E2B /* ZKCommonItemCell.m */,
-				58B013BE1E680D36000D6E2B /* ZKProfileHeaderCell.h */,
-				58B013BF1E680D36000D6E2B /* ZKProfileHeaderCell.m */,
+				58B013E51E682BB4000D6E2B /* ZKProfileHeaderCell.h */,
+				58B013E61E682BB4000D6E2B /* ZKProfileHeaderCell.m */,
+				58B013E71E682BB4000D6E2B /* ZKProfileHeaderCell.xib */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -487,9 +506,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				58F661AC1E67BD4B00CEB6B9 /* ZKHomeBaseViewController.xib in Resources */,
+				58B013E21E682907000D6E2B /* data_discover.plist in Resources */,
 				58F661741E67BB5E00CEB6B9 /* LaunchScreen.storyboard in Resources */,
 				58B013C21E680E49000D6E2B /* data_me.plist in Resources */,
 				58F661711E67BB5E00CEB6B9 /* Assets.xcassets in Resources */,
+				58B013E91E682BB4000D6E2B /* ZKProfileHeaderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,14 +585,14 @@
 			files = (
 				58F661ED1E67E66700CEB6B9 /* UIButton+New.m in Sources */,
 				58F661F11E67E66700CEB6B9 /* UIView+Addition.m in Sources */,
+				58B013E01E682809000D6E2B /* ZKCommonItemViewController.m in Sources */,
 				58F661EF1E67E66700CEB6B9 /* UIImage+Common.m in Sources */,
 				58F661BD1E67E4BC00CEB6B9 /* UIViewController+Navigation.m in Sources */,
 				58F661F21E67E66700CEB6B9 /* UIView+AutoLayout.m in Sources */,
+				58B013DA1E68230B000D6E2B /* ZKCommonItemCell.m in Sources */,
 				58F661691E67BB5E00CEB6B9 /* AppDelegate.m in Sources */,
-				58B013C01E680D36000D6E2B /* ZKProfileHeaderCell.m in Sources */,
 				58F661EB1E67E66700CEB6B9 /* NSString+Common.m in Sources */,
 				58F661AD1E67BD4B00CEB6B9 /* ZKRootViewController.m in Sources */,
-				58B013BD1E680CE8000D6E2B /* ZKCommonItemCell.m in Sources */,
 				58F662041E67F8D900CEB6B9 /* ZKDiscoverViewController.m in Sources */,
 				58B013D21E681CFC000D6E2B /* USLogger.m in Sources */,
 				58F661B91E67DD5600CEB6B9 /* CFunctionImplement.m in Sources */,
@@ -580,6 +601,7 @@
 				58F661FE1E67F6B200CEB6B9 /* ZKMeViewController.m in Sources */,
 				58B013D61E681DC1000D6E2B /* NSDate+Common.m in Sources */,
 				58F661AB1E67BD4B00CEB6B9 /* ZKHomeBaseViewController.m in Sources */,
+				58B013E81E682BB4000D6E2B /* ZKProfileHeaderCell.m in Sources */,
 				58F661661E67BB5E00CEB6B9 /* main.m in Sources */,
 				58F661AE1E67BD4B00CEB6B9 /* ZKViewController.m in Sources */,
 				58F662011E67F8C700CEB6B9 /* ZKHomeViewController.m in Sources */,
@@ -642,7 +664,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -689,7 +711,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
