@@ -6,8 +6,8 @@
 //  Copyright © 2017年 ZK. All rights reserved.
 //
 
-#import "USViewController.h"
+#import "ZKViewController.h"
 
-@interface ZKTimelineViewController : USViewController
+@interface ZKTimelineViewController : ZKViewController
 
 @end

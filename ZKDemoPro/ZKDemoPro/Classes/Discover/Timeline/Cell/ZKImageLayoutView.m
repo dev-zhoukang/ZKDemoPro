@@ -89,8 +89,8 @@ static const NSUInteger kMaxColCountPerRow = 3;
         imageView.us_top = i / kMaxColCountPerRow * widthWithMargin;
         imageView.us_left = i % kMaxColCountPerRow * widthWithMargin;
         
-        NSString *thumbUrlStr = [imageUrlArray[i] fullThumbImageURLWithMinPixel:150];
-        [imageView sd_setImageWithURL:[NSURL URLWithString:thumbUrlStr] placeholderImage:[UIImage imageWithColor:GlobalBGColor]];
+//        NSString *thumbUrlStr = [imageUrlArray[i] fullThumbImageURLWithMinPixel:150];
+//        [imageView sd_setImageWithURL:[NSURL URLWithString:thumbUrlStr] placeholderImage:[UIImage imageWithColor:GlobalBGColor]];
         
         imageView.tag = i;
         imageView.userInteractionEnabled = true;

@@ -7,7 +7,7 @@
 //
 
 #import "ZKTimelineCommentCellLayout.h"
-#import "USTextLinePositionModifier.h"
+#import "ZKTextLinePositionModifier.h"
 #import "ZKRegularTool.h"
 
 @interface ZKTimelineCommentCellLayout()
@@ -36,7 +36,7 @@
 }
 
 - (CGFloat)layoutTextHeight {
-    USTextLinePositionModifier *modifier = [USTextLinePositionModifier new];
+    ZKTextLinePositionModifier *modifier = [ZKTextLinePositionModifier new];
     modifier.font = [UIFont systemFontOfSize:14];
     modifier.paddingTop = 0;
     modifier.paddingBottom = 0;

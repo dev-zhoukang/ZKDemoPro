@@ -9,7 +9,7 @@
 #import "ZKTimelineViewController.h"
 #import "ZKTimelineCell.h"
 #import "ZKTimelineCellLayout.h"
-#import "MJRefresh.h"
+//#import "MJRefresh.h"
 
 @interface ZKTimelineViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -30,16 +30,16 @@
 }
 
 - (void)setupRefresh {
-    _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        _currentPage = 0;
-        [self requestDataPullDown:true];
-    }];
-    [_tableView.mj_header beginRefreshing];
-    
-    _tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
-        _currentPage ++;
-        [self requestDataPullDown:false];
-    }];
+//    _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+//        _currentPage = 0;
+//        [self requestDataPullDown:true];
+//    }];
+//    [_tableView.mj_header beginRefreshing];
+//    
+//    _tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+//        _currentPage ++;
+//        [self requestDataPullDown:false];
+//    }];
 }
 
 - (void)requestDataPullDown:(BOOL)isPullDown {
@@ -66,14 +66,14 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             [_tableView reloadData];
             
-            [_tableView.mj_header endRefreshing];
-            
-            if (!dynamicArray.count) {
-                [_tableView.mj_footer endRefreshingWithNoMoreData];
-            }
-            else {
-                [_tableView.mj_footer endRefreshing];
-            }
+//            [_tableView.mj_header endRefreshing];
+//            
+//            if (!dynamicArray.count) {
+//                [_tableView.mj_footer endRefreshingWithNoMoreData];
+//            }
+//            else {
+//                [_tableView.mj_footer endRefreshing];
+//            }
         });
     });
 }
@@ -82,7 +82,7 @@
     self.title = @"朋友圈";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    _tableView = [[UITableView alloc] initWithFrame:(CGRect){0,_topInset, SCREEN_WIDTH, SCREEN_HEIGHT-_topInset} style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc] initWithFrame:(CGRect){0,topInset, SCREEN_WIDTH, SCREEN_HEIGHT-topInset} style:UITableViewStylePlain];
     [self.view addSubview:_tableView];
     _tableView.tableFooterView = [UIView new];
     _tableView.delegate = self;

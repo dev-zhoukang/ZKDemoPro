@@ -1,5 +1,5 @@
 //
-//  USTimeline.h
+//  ZKTimeline.h
 //  ZKDemoPlus
 //
 //  Created by ZK on 17/2/21.
@@ -10,7 +10,7 @@
 #import "ZKUser.h"
 #import "ZKComment.h"
 
-@interface USTimeline : DBObject
+@interface ZKTimeline : DBObject
 
 @property (nonatomic, copy) NSString *contentText;
 @property (nonatomic, copy) NSString *imageUrls;

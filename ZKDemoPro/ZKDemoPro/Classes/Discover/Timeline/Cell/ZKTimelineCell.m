@@ -152,7 +152,8 @@ static const CGFloat kRightMargin = 15.f;
     _contentLabel.textLayout = layout.textLayout;
     
     ZKUser *fromUser = layout.timelineModel.fromUser;
-    NSString *avatar = [HLTool avatarSmallImageUrl:fromUser.avatarStr uid:fromUser.uid];
+//    NSString *avatar = [HLTool avatarSmallImageUrl:fromUser.avatarStr uid:fromUser.uid];
+    NSString *avatar = @"";
     _nameLabel.text = fromUser.nickName;
     
     NSString *locationStr = layout.timelineModel.location;

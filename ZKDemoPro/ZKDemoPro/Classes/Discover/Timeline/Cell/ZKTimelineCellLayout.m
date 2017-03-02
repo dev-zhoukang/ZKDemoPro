@@ -7,7 +7,7 @@
 //
 
 #import "ZKTimelineCellLayout.h"
-#import "USTextLinePositionModifier.h"
+#import "ZKTextLinePositionModifier.h"
 #import "ZKRegularTool.h"
 #import "ZKImageLayoutView.h"
 #import "ZKTimelineCommentView.h"
@@ -67,7 +67,7 @@ static const CGFloat kDefaultMargin = 10.f;
 - (CGFloat)layoutContentText {
     CGFloat height = 0;
     
-    USTextLinePositionModifier *modifier = [USTextLinePositionModifier new];
+    ZKTextLinePositionModifier *modifier = [ZKTextLinePositionModifier new];
     modifier.font = [UIFont systemFontOfSize:15];
     modifier.paddingTop = 5;
     modifier.paddingBottom = 5;
