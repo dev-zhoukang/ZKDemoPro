@@ -183,7 +183,7 @@
 //        responseCallback(_loginUser?[_loginUser dictionary]:@{});
 //    }];
     [_bridge registerHandler:@"DeviceInfo" handler:^(id data, WVJBResponseCallback responseCallback) {
-        responseCallback([UIDevice BIData]);
+        //responseCallback([UIDevice BIData]);
     }];
     [_bridge registerHandler:@"PushView" handler:^(id data, WVJBResponseCallback responseCallback) {
         UIViewController *viewController = [[weak_self class] viewControllerWithInfo:data];
@@ -200,9 +200,9 @@
     }];
     [_bridge registerHandler:@"CallInterface" handler:^(id data, WVJBResponseCallback responseCallback) {
         if (data && [data isKindOfClass:[NSDictionary class]]) {
-            [NetManager postRequestToUrl:data[@"url"] params:data[@"params"] complete:^(BOOL successed, HttpResponse *response) {
-                responseCallback?responseCallback(@{@"success":@(successed),@"result":(response.payload?:@{})}):nil;
-            }];
+//            [NetManager postRequestToUrl:data[@"url"] params:data[@"params"] complete:^(BOOL successed, HttpResponse *response) {
+//                responseCallback?responseCallback(@{@"success":@(successed),@"result":(response.payload?:@{})}):nil;
+//            }];
         }
     }];
 //    [_bridge registerHandler:@"SetUserInfo" handler:^(id data, WVJBResponseCallback responseCallback) {

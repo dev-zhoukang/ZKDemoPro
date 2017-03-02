@@ -72,19 +72,19 @@
  object will be add to the array/set/dictionary.
  
   Example:
-        @class DBShadow, DBBorder, USUser;
+        @class DBShadow, DBBorder, ZKUser;
  
         @interface DBAttributes
         @property NSString *name;
         @property NSArray *shadows;
         @property NSSet *borders;
-        @property USUser *user;
+        @property ZKUser *user;
         @end
  
         @implementation DBAttributes
         + (NSDictionary *) propertyGenericClass {
             return @{@"shadows" : [DBShadow class],
-                     @"user" : @"USUser" };
+                     @"user" : @"ZKUser" };
         }
         @end
  
