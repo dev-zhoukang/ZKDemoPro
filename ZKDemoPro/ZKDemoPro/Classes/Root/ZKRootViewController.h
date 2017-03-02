@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZKRootViewController : UIViewController
+@interface ZKRootViewController : ZKViewController
+
+@property (nonatomic, strong, readonly) UINavigationController *rootNavigationController;
 
 @end

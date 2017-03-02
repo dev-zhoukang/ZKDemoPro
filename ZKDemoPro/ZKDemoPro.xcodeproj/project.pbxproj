@@ -25,6 +25,8 @@
 		58F661EF1E67E66700CEB6B9 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661DF1E67E66700CEB6B9 /* UIImage+Common.m */; };
 		58F661F11E67E66700CEB6B9 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661E31E67E66700CEB6B9 /* UIView+Addition.m */; };
 		58F661F21E67E66700CEB6B9 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661E51E67E66700CEB6B9 /* UIView+AutoLayout.m */; };
+		58F661F71E67EDFB00CEB6B9 /* ZKHVButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661F61E67EDFB00CEB6B9 /* ZKHVButton.m */; };
+		58F661FE1E67F6B200CEB6B9 /* ZKMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F661FD1E67F6B200CEB6B9 /* ZKMeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,10 @@
 		58F661E31E67E66700CEB6B9 /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
 		58F661E41E67E66700CEB6B9 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		58F661E51E67E66700CEB6B9 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		58F661F51E67EDFB00CEB6B9 /* ZKHVButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKHVButton.h; sourceTree = "<group>"; };
+		58F661F61E67EDFB00CEB6B9 /* ZKHVButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKHVButton.m; sourceTree = "<group>"; };
+		58F661FC1E67F6B200CEB6B9 /* ZKMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKMeViewController.h; sourceTree = "<group>"; };
+		58F661FD1E67F6B200CEB6B9 /* ZKMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKMeViewController.m; sourceTree = "<group>"; };
 		A3C5E549514D882AC5209282 /* libPods-ZKDemoPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZKDemoPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -186,6 +192,10 @@
 		58F661971E67BBA400CEB6B9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				58F661F81E67F64C00CEB6B9 /* Contact */,
+				58F661F91E67F64C00CEB6B9 /* Discover */,
+				58F661FA1E67F64C00CEB6B9 /* Home */,
+				58F661FB1E67F64C00CEB6B9 /* Me */,
 				58F661A31E67BD4B00CEB6B9 /* Root */,
 			);
 			path = Classes;
@@ -236,8 +246,48 @@
 		58F661C01E67E60B00CEB6B9 /* ZKCustom */ = {
 			isa = PBXGroup;
 			children = (
+				58F661F41E67EDFB00CEB6B9 /* ZKHVButton */,
 			);
 			path = ZKCustom;
+			sourceTree = "<group>";
+		};
+		58F661F41E67EDFB00CEB6B9 /* ZKHVButton */ = {
+			isa = PBXGroup;
+			children = (
+				58F661F51E67EDFB00CEB6B9 /* ZKHVButton.h */,
+				58F661F61E67EDFB00CEB6B9 /* ZKHVButton.m */,
+			);
+			path = ZKHVButton;
+			sourceTree = "<group>";
+		};
+		58F661F81E67F64C00CEB6B9 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		58F661F91E67F64C00CEB6B9 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		58F661FA1E67F64C00CEB6B9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		58F661FB1E67F64C00CEB6B9 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				58F661FC1E67F6B200CEB6B9 /* ZKMeViewController.h */,
+				58F661FD1E67F6B200CEB6B9 /* ZKMeViewController.m */,
+			);
+			path = Me;
 			sourceTree = "<group>";
 		};
 		608490F7F9B20FC78A5F1A52 /* Frameworks */ = {
@@ -453,9 +503,11 @@
 				58F661EB1E67E66700CEB6B9 /* NSString+Common.m in Sources */,
 				58F661AD1E67BD4B00CEB6B9 /* ZKRootViewController.m in Sources */,
 				58F661B91E67DD5600CEB6B9 /* CFunctionImplement.m in Sources */,
+				58F661FE1E67F6B200CEB6B9 /* ZKMeViewController.m in Sources */,
 				58F661AB1E67BD4B00CEB6B9 /* ZKHomeViewController.m in Sources */,
 				58F661661E67BB5E00CEB6B9 /* main.m in Sources */,
 				58F661AE1E67BD4B00CEB6B9 /* ZKViewController.m in Sources */,
+				58F661F71E67EDFB00CEB6B9 /* ZKHVButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
