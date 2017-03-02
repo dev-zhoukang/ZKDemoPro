@@ -8,6 +8,10 @@
 
 #import "ZKCommonItemCell.h"
 
+@interface ZKCommonItemCell()
+
+@end
+
 @implementation ZKCommonItemCell
 
 + (instancetype)cellWithTableView:(UITableView *)tableView {

@@ -11,5 +11,6 @@
 @interface ZKCommonItemCell : UITableViewCell
 
 + (instancetype)cellWithTableView:(UITableView *)tableView;
+- (void)updateWithDict:(NSDictionary *)dict;
 
 @end
