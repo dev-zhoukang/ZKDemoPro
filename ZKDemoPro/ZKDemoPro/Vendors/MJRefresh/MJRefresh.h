@@ -12,6 +12,3 @@
 #import "MJRefreshBackGifFooter.h"
 #import "MJRefreshAutoNormalFooter.h"
 #import "MJRefreshAutoGifFooter.h"
-
-#import "MCRefreshHeader.h"
-#import "MCRefreshFooter.h"

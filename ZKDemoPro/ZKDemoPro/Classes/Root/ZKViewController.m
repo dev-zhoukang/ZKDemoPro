@@ -70,6 +70,9 @@
         make.top.left.right.mas_equalTo(0);
         make.height.mas_equalTo(topInset);
     }];
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+    }
 }
 
 - (void)setTitle:(NSString *)title {

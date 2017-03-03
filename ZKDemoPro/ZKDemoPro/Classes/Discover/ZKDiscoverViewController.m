@@ -7,8 +7,9 @@
 //
 
 #import "ZKDiscoverViewController.h"
+#import "ZKTimelineViewController.h"
 
-@interface ZKDiscoverViewController ()
+@interface ZKDiscoverViewController () <UITableViewDelegate>
 
 @end
 
@@ -28,6 +29,27 @@
            [self.tableView reloadData];
        });
     });
+}
+
+#pragma mark - Override
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:true];
+    
+    [self judgeVCToJumpWithIndexPath:indexPath callback:^(UIViewController *vc){
+        [self.navigationController pushViewController:vc animated:true];
+    }];
+}
+
+- (void)judgeVCToJumpWithIndexPath:(NSIndexPath *)indexPath callback:(void(^)(UIViewController *vc))callback {
+    
+    UIViewController *targetVC = nil;
+    
+    NSString *title = self.dataSource[indexPath.section][indexPath.item][@"title"];
+    if ([title isEqualToString:@"朋友圈"]) {
+        targetVC = [ZKTimelineViewController new];
+    }
+    !callback?:callback(targetVC);
 }
 
 @end
