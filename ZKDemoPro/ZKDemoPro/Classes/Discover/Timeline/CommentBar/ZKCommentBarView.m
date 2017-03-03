@@ -47,6 +47,7 @@ const CGFloat kBottomPanelDefaultHeight = 215.f;;
     [KeyWindow addSubview:barView];
     [barView makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.mas_equalTo(barView.superview.mas_bottom).offset(500);
+        make.width.mas_equalTo(SCREEN_WIDTH);
     }];
     [barView.superview layoutIfNeeded];
     [barView.textView becomeFirstResponder];
@@ -54,9 +55,6 @@ const CGFloat kBottomPanelDefaultHeight = 215.f;;
 
 - (void)setupUI {
     self.backgroundColor = GlobalChatBGColor;
-    [self makeConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_equalTo(SCREEN_WIDTH);
-    }];
     
     _topPanel = [UIView new];
     [self addSubview:_topPanel];
@@ -92,6 +90,7 @@ const CGFloat kBottomPanelDefaultHeight = 215.f;;
     [_topPanel addSubview:_textView];
     _textView.font = [UIFont systemFontOfSize:14];
     _textView.placeholderText = @"评论";
+    _textView.placeholderFont = [UIFont systemFontOfSize:14];
     _textView.textContainerInset = UIEdgeInsetsMake(7, 6, 7, 6);
     _textView.delegate = self;
     _textView.backgroundColor = [UIColor whiteColor];
@@ -200,9 +199,9 @@ const CGFloat kBottomPanelDefaultHeight = 215.f;;
         make.height.mas_equalTo(topPanelNewHeight);
     }];
     
-    [UIView animateWithDuration:.3 delay:0 options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionCurveEaseOut animations:^{
+    [UIView animateWithDuration:.25 delay:0 options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionCurveEaseOut animations:^{
         self.bottom = _keyboard_y+kBottomPanelDefaultHeight;
-        [self layoutIfNeeded];
+        [self.superview layoutIfNeeded];
     } completion:nil];
 }
 
