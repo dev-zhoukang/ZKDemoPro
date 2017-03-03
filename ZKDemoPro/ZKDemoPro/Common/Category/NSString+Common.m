@@ -1,12 +1,11 @@
 //  Created by chen ying on 12-11-6.
 
 #import "NSString+Common.h"
-
+#import "DataHash.h"
 
 @implementation NSString (Common)
 
-- (BOOL)containsString:(NSString *)str
-{
+- (BOOL)containsString:(NSString *)str {
     if (str && self.length && str.length) {
         NSRange range = [self rangeOfString:str];
         if (range.location == NSNotFound) {
@@ -18,8 +17,7 @@
 }
 
 // 验证邮箱格式
--(BOOL)isValidateEmail
-{
+-(BOOL)isValidateEmail {
     BOOL stricterFilter = YES;   //规定是否严格判断格式
     NSString *stricterFilterString = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9-]+[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
     NSString *laxString = @".+@.+\\.[A-Za-z]{2}[A-Za-z]*";
@@ -30,16 +28,14 @@
 }
 
 //是否都为整形数字
-- (BOOL)isPureInt
-{
+- (BOOL)isPureInt {
     NSScanner* scan = [NSScanner scannerWithString:self];
     int val;
     return [scan scanInt:&val] && [scan isAtEnd];
 }
 
 // 验证身份证号码
-- (BOOL)isValidateIDCard
-{
+- (BOOL)isValidateIDCard {
     if (self.length != 18) {
         return  NO;
     }
@@ -67,8 +63,7 @@
 }
 
 // 验证手机号码
-- (BOOL)isValidateMobileNumber
-{
+- (BOOL)isValidateMobileNumber {
     //手机号以13， 15，18开头，八个 \d 数字字符 （新增14、17号段）
     NSString *phoneRegex = @"^((13[0-9])|(14[5,7])|(15[^4,\\D])|(17[0-9])|(18[0-9]))\\d{8}$";
     NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@" ,phoneRegex];
@@ -76,16 +71,14 @@
 }
 
 // 验证固定电话 座机
-- (BOOL)isValidateLandlineTelephone
-{
+- (BOOL)isValidateLandlineTelephone {
     NSString *regex = @"^(0[0-9]{2,3})?([2-9][0-9]{6,7})+([0-9]{1,4})?$";
     NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     return [phoneTest evaluateWithObject:self];
 }
 
 // 剔除卡号里的非法字符
-- (NSString *)getDigitsOnly
-{
+- (NSString *)getDigitsOnly {
     NSString *digitsOnly = @"";
     char c;
     for (int i = 0; i < self.length; i++){
@@ -98,8 +91,7 @@
 }
 
 // 验证银行卡 (Luhn算法)
-- (BOOL)isValidCardNumber
-{
+- (BOOL)isValidCardNumber {
     if (self.length < 16 || self.length > 19) return NO;
     
     NSString *digitsOnly = [self getDigitsOnly];
@@ -123,8 +115,7 @@
 }
 
 // 银行卡号对应的 发卡行.卡种名称
-- (NSString *)correspondingBankName
-{
+- (NSString *)correspondingBankName {
     NSString* idCard = self;
     
     NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"bank_list" ofType:@"json"];
@@ -158,8 +149,7 @@
 }
 
 
-- (float)stringWidthWithFont:(UIFont *)font height:(float)height
-{
+- (float)stringWidthWithFont:(UIFont *)font height:(float)height {
     if (self == nil || self.length == 0) {
         return 0;
     }
@@ -188,14 +178,12 @@
     return ceilf(size.width+0.5);
 }
 
-- (float)stringHeightWithFont:(UIFont *)font width:(float)width
-{
+- (float)stringHeightWithFont:(UIFont *)font width:(float)width {
     return [self stringHeightWithFont:font width:width lineSpacing:0];
 }
 
 
-- (float)stringHeightWithFont:(UIFont *)font width:(float)width lineSpacing:(float)lineSpacing
-{
+- (float)stringHeightWithFont:(UIFont *)font width:(float)width lineSpacing:(float)lineSpacing {
     if (self == nil || self.length == 0) {
         return 0;
     }
@@ -227,8 +215,7 @@
     return ceilf(size.height+0.5);
 }
 
-- (BOOL)containsChineseCharacter
-{
+- (BOOL)containsChineseCharacter {
     BOOL isContan = NO;
     
     for(int i=0; i< [self length];i++) {
@@ -244,13 +231,39 @@
     return isContan;
 }
 
-- (NSString *)fullThumbImageURLWithMinPixel:(NSInteger)minPixel
-{
+- (NSString *)fullThumbImageURLWithMinPixel:(NSInteger)minPixel {
     if (!self.length) return self;
     
     NSString *lastComponent = [NSString stringWithFormat:@"_%@.jpg", @(minPixel)];
     
     return [self stringByReplacingOccurrencesOfString:@".jpg" withString:lastComponent];
+}
+
+// 关于头像
+
+- (NSString *)avatarStrWithUid:(NSString *)uid {
+    return [self avatarImageWithUid:uid size:150];
+}
+
+- (NSString *)avatarImageWithUid:(NSString *)uid size:(int)size {
+    NSString *imageName = [self stringByAppendingFormat:@"_%d",size];
+    return [self imageUrlWithName:imageName uid:uid folder:@"/avatar/"];
+}
+
+- (NSString *)imageUrlWithName:(NSString *)name uid:(NSString *)uid folder:(NSString *)folder {
+    NSString *fullStr = @"";
+    
+    if(!name || !name.length){
+        return fullStr;
+    }
+    
+    NSString *lastMd5 = uid ? [[NSString stringWithFormat:@"%@",uid] md5] : name;
+    NSString *firstDic = [lastMd5 substringWithRange:NSMakeRange(0, 2)];
+    NSString *secondDic = [lastMd5 substringWithRange:NSMakeRange(2, 2)];
+    
+    fullStr = [NSString stringWithFormat:@"%@%@%@/%@/%@.jpg", @"http://images.himoca.com", folder, firstDic, secondDic, name];
+    
+    return fullStr;
 }
 
 @end
@@ -259,8 +272,7 @@
 @implementation NSNumber (Common)
 
 /** 格式化金额数据，数字千分位 */
-- (NSString *)stringWithAmountFormat
-{
+- (NSString *)stringWithAmountFormat {
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
     [formatter setMaximumFractionDigits:2];

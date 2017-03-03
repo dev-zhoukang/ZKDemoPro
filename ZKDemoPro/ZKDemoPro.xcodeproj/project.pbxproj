@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		106E4323C5D9DB83442F648F /* libPods-ZKDemoPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C5E549514D882AC5209282 /* libPods-ZKDemoPro.a */; };
+		58823DE61E695448006FE499 /* DataHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 58823DE51E695448006FE499 /* DataHash.m */; };
 		58B013C21E680E49000D6E2B /* data_me.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B013C11E680E49000D6E2B /* data_me.plist */; };
 		58B013D21E681CFC000D6E2B /* USLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013D01E681CFC000D6E2B /* USLogger.m */; };
 		58B013D61E681DC1000D6E2B /* NSDate+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013D51E681DC1000D6E2B /* NSDate+Common.m */; };
@@ -119,6 +120,8 @@
 /* Begin PBXFileReference section */
 		065D55B940D504E1559A2F5E /* Pods-ZKDemoPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKDemoPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZKDemoPro/Pods-ZKDemoPro.release.xcconfig"; sourceTree = "<group>"; };
 		08514F0BC6FBEDB00556441A /* Pods-ZKDemoPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKDemoPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZKDemoPro/Pods-ZKDemoPro.debug.xcconfig"; sourceTree = "<group>"; };
+		58823DE41E695448006FE499 /* DataHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHash.h; sourceTree = "<group>"; };
+		58823DE51E695448006FE499 /* DataHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHash.m; sourceTree = "<group>"; };
 		58B013C11E680E49000D6E2B /* data_me.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_me.plist; sourceTree = "<group>"; };
 		58B013CF1E681CFC000D6E2B /* USLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USLogger.h; sourceTree = "<group>"; };
 		58B013D01E681CFC000D6E2B /* USLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USLogger.m; sourceTree = "<group>"; };
@@ -313,9 +316,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58823DE31E695448006FE499 /* Hash */ = {
+			isa = PBXGroup;
+			children = (
+				58823DE41E695448006FE499 /* DataHash.h */,
+				58823DE51E695448006FE499 /* DataHash.m */,
+			);
+			path = Hash;
+			sourceTree = "<group>";
+		};
 		58B013C31E681CBB000D6E2B /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				58823DE31E695448006FE499 /* Hash */,
 				58B014351E683532000D6E2B /* ApplicationContext.h */,
 				58B014361E683532000D6E2B /* ApplicationContext.m */,
 				58B013CE1E681CFC000D6E2B /* USLog */,
@@ -1032,6 +1045,7 @@
 				58B014AA1E683EC6000D6E2B /* MJRefreshFooter.m in Sources */,
 				58B014311E6832F4000D6E2B /* ZKUser.m in Sources */,
 				58F661661E67BB5E00CEB6B9 /* main.m in Sources */,
+				58823DE61E695448006FE499 /* DataHash.m in Sources */,
 				58B014301E6832F4000D6E2B /* ZKTimelineViewController.m in Sources */,
 				58B0146D1E683CC7000D6E2B /* ZKPhotoBrowser.m in Sources */,
 				58B014B01E683EC6000D6E2B /* MJRefreshBackGifFooter.m in Sources */,

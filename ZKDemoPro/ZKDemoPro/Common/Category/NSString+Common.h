@@ -31,6 +31,7 @@
 - (BOOL)containsChineseCharacter;
 
 - (NSString *)fullThumbImageURLWithMinPixel:(NSInteger)minPixel;
+- (NSString *)avatarStrWithUid:(NSString *)uid;
 
 - (float)stringWidthWithFont:(UIFont *)font height:(float)height;
 - (float)stringHeightWithFont:(UIFont *)font width:(float)width lineSpacing:(float)lineSpacing;
