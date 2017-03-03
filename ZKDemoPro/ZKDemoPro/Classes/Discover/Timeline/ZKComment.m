@@ -11,7 +11,7 @@
 
 @implementation ZKComment
 
-+ (NSDictionary *)propertyMapper {
++ (NSDictionary<NSString *,id> *)modelCustomPropertyMapper {
     return @{
              @"avatarStr": @"avatar",
              @"createTime": @"create_time",

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ZKUser : DBObject
+@interface ZKUser : NSObject <YYModel>
 
 @property (nonatomic, copy) NSString *avatarStr;
 @property (nonatomic, copy) NSString *nickName;

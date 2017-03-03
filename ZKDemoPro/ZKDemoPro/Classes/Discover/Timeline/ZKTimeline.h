@@ -10,7 +10,7 @@
 #import "ZKUser.h"
 #import "ZKComment.h"
 
-@interface ZKTimeline : DBObject
+@interface ZKTimeline : NSObject <YYModel>
 
 @property (nonatomic, copy) NSString *contentText;
 @property (nonatomic, copy) NSString *imageUrls;

@@ -52,7 +52,7 @@
         
         NSArray *dynamicArray = fileDict[@"dynamic"];
         
-        NSArray <ZKTimeline *> *oriModels = [ZKTimeline modelListWithArray:dynamicArray];
+        NSArray <ZKTimeline *> *oriModels = [NSArray modelArrayWithClass:[ZKTimeline class] json:dynamicArray];
         
         NSMutableArray *tempArray = [[NSMutableArray alloc] init];
         for (ZKTimeline *model in oriModels) {

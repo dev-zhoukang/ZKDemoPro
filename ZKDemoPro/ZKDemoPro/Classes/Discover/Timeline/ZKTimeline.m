@@ -1,5 +1,5 @@
 //
-//  ZKTimeline.m
+//  USTimeline.m
 //  ZKDemoPlus
 //
 //  Created by ZK on 17/2/21.
@@ -10,36 +10,25 @@
 
 @implementation ZKTimeline
 
-+ (NSDictionary *)propertyMapper {
++ (NSDictionary<NSString *,id> *)modelCustomPropertyMapper {
     return @{
              @"contentText": @"content",
              @"imageUrls": @"file_name",
              @"sendTime": @"send_time",
-             @"fromUser": @"user_info",
              @"imgSize": @"img_size",
+             @"fromUser": @"user_info"
              };
 }
 
-+ (NSDictionary *)propertyGenericClass {
-    return @{
-             @"fromUser": [ZKUser class]
-             };
-}
-
-- (void)populateValue:(id)value forKey:(NSString *)key {
-    if ([key isEqualToString:@"comment"]) {
-        if (![value isKindOfClass:[NSArray class]]) return;
-        NSMutableArray <ZKComment *> *tempArray = [[NSMutableArray alloc] init];
-        for (NSArray *itemArray in value) {
-            ZKComment *comment = [ZKComment new];
-            [comment populateWithObject:itemArray.firstObject];
-            [tempArray addObject:comment];
-        }
-        [super populateValue:tempArray forKey:@"comments"];
+- (BOOL)modelCustomTransformToDictionary:(NSMutableDictionary *)dic {
+    
+    NSMutableArray <ZKComment *> *tempArray = [[NSMutableArray alloc] init];
+    for (NSArray *itemArray in dic[@"comment"]) {
+        ZKComment *comment = [ZKComment modelWithDictionary:itemArray.firstObject];
+        [tempArray addObject:comment];
     }
-    else {
-        [super populateValue:value forKey:key];
-    }
+    _comments = tempArray.copy;
+    return true;
 }
 
 @end

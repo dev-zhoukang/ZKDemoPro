@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ZKComment : DBObject
+@interface ZKComment : NSObject <YYModel>
 
 @property (nonatomic, copy) NSString *avatarStr;
 @property (nonatomic, copy) NSString *content;

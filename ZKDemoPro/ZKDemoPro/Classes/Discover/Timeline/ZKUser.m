@@ -10,7 +10,7 @@
 
 @implementation ZKUser
 
-+ (NSDictionary *)propertyMapper {
++ (NSDictionary<NSString *,id> *)modelCustomPropertyMapper {
     return @{
              @"avatarStr": @"avatar",
              @"nickName": @"nickname",
