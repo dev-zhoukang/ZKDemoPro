@@ -83,15 +83,14 @@ static const NSUInteger kMaxColCountPerRow = 3;
         [self addSubview:imageView];
         imageView.clipsToBounds = YES;
         imageView.contentMode = UIViewContentModeScaleAspectFill;
-        imageView.backgroundColor = GlobalBGColor;
         
         imageView.size = (imageCount == 1) ? [[self class] calculateSingleSizeWithImageSizeStr:timelineModel.imgSize] : (CGSize){picWH, picWH};
 
         imageView.us_top = i / kMaxColCountPerRow * widthWithMargin;
         imageView.us_left = i % kMaxColCountPerRow * widthWithMargin;
         
-//        NSString *thumbUrlStr = [imageUrlArray[i] fullThumbImageURLWithMinPixel:150];
-//        [imageView sd_setImageWithURL:[NSURL URLWithString:thumbUrlStr] placeholderImage:[UIImage imageWithColor:GlobalBGColor]];
+        NSString *thumbUrlStr = [imageUrlArray[i] fullThumbImageURLWithMinPixel:150];
+        [imageView sd_setImageWithURL:[NSURL URLWithString:thumbUrlStr] placeholderImage:[UIImage imageWithColor:GlobalBGColor]];
         
         imageView.tag = i;
         imageView.userInteractionEnabled = true;

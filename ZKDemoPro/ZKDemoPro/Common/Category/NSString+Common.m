@@ -244,6 +244,15 @@
     return isContan;
 }
 
+- (NSString *)fullThumbImageURLWithMinPixel:(NSInteger)minPixel
+{
+    if (!self.length) return self;
+    
+    NSString *lastComponent = [NSString stringWithFormat:@"_%@.jpg", @(minPixel)];
+    
+    return [self stringByReplacingOccurrencesOfString:@".jpg" withString:lastComponent];
+}
+
 @end
 
 

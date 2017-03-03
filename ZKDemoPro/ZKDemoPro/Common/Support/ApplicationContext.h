@@ -12,7 +12,7 @@
 
 @class ApplicationContext;
 
-@interface ApplicationContext : DBObject
+@interface ApplicationContext : NSObject
 
 + (instancetype)sharedContext;
 

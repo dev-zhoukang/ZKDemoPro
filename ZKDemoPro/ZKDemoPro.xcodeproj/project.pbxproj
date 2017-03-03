@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		106E4323C5D9DB83442F648F /* libPods-ZKDemoPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C5E549514D882AC5209282 /* libPods-ZKDemoPro.a */; };
 		58B013C21E680E49000D6E2B /* data_me.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B013C11E680E49000D6E2B /* data_me.plist */; };
-		58B013CD1E681CD0000D6E2B /* DBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013CA1E681CD0000D6E2B /* DBObject.m */; };
 		58B013D21E681CFC000D6E2B /* USLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013D01E681CFC000D6E2B /* USLogger.m */; };
 		58B013D61E681DC1000D6E2B /* NSDate+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013D51E681DC1000D6E2B /* NSDate+Common.m */; };
 		58B013DA1E68230B000D6E2B /* ZKCommonItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013D91E68230B000D6E2B /* ZKCommonItemCell.m */; };
@@ -121,8 +120,6 @@
 		065D55B940D504E1559A2F5E /* Pods-ZKDemoPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKDemoPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZKDemoPro/Pods-ZKDemoPro.release.xcconfig"; sourceTree = "<group>"; };
 		08514F0BC6FBEDB00556441A /* Pods-ZKDemoPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKDemoPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZKDemoPro/Pods-ZKDemoPro.debug.xcconfig"; sourceTree = "<group>"; };
 		58B013C11E680E49000D6E2B /* data_me.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_me.plist; sourceTree = "<group>"; };
-		58B013C91E681CD0000D6E2B /* DBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBObject.h; sourceTree = "<group>"; };
-		58B013CA1E681CD0000D6E2B /* DBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBObject.m; sourceTree = "<group>"; };
 		58B013CF1E681CFC000D6E2B /* USLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USLogger.h; sourceTree = "<group>"; };
 		58B013D01E681CFC000D6E2B /* USLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USLogger.m; sourceTree = "<group>"; };
 		58B013D41E681DC1000D6E2B /* NSDate+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Common.h"; sourceTree = "<group>"; };
@@ -322,18 +319,8 @@
 				58B014351E683532000D6E2B /* ApplicationContext.h */,
 				58B014361E683532000D6E2B /* ApplicationContext.m */,
 				58B013CE1E681CFC000D6E2B /* USLog */,
-				58B013C41E681CD0000D6E2B /* DBModel */,
 			);
 			path = Support;
-			sourceTree = "<group>";
-		};
-		58B013C41E681CD0000D6E2B /* DBModel */ = {
-			isa = PBXGroup;
-			children = (
-				58B013C91E681CD0000D6E2B /* DBObject.h */,
-				58B013CA1E681CD0000D6E2B /* DBObject.m */,
-			);
-			path = DBModel;
 			sourceTree = "<group>";
 		};
 		58B013CE1E681CFC000D6E2B /* USLog */ = {
@@ -1030,7 +1017,6 @@
 				58F661B91E67DD5600CEB6B9 /* CFunctionImplement.m in Sources */,
 				58F662071E67F8EA00CEB6B9 /* ZKContactViewController.m in Sources */,
 				58B014BC1E683EC6000D6E2B /* UIScrollView+MJRefresh.m in Sources */,
-				58B013CD1E681CD0000D6E2B /* DBObject.m in Sources */,
 				58B0142F1E6832F4000D6E2B /* ZKTimeline.m in Sources */,
 				58F661FE1E67F6B200CEB6B9 /* ZKMeViewController.m in Sources */,
 				58B013D61E681DC1000D6E2B /* NSDate+Common.m in Sources */,

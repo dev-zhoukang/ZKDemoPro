@@ -304,9 +304,9 @@
             Class iclass = NSClassFromString(obj[@"class"]);
             id value = obj[@"value"];
             if (class) {
-                DBObject *item = [[iclass alloc] init];
-                if ([item isKindOfClass:[DBObject class]]) {
-                    [item populateWithObject:value];
+                NSObject *item = [[iclass alloc] init];
+                if ([item isKindOfClass:[NSObject class]]) {
+                    item = [NSObject modelWithDictionary:value];
                 }
                 else if ([value isKindOfClass:[NSDictionary class]]) {
                     [value enumerateKeysAndObjectsUsingBlock:^(id key2, id obj2, BOOL * stop) {

@@ -24,7 +24,6 @@
 #import "UIView+Addition.h"
 #import "NSDate+Common.h"
 #import "USLogger.h"
-#import "DBObject.h"
 #import "ApplicationContext.h"
 
 #endif /* ProjectHeader_h */

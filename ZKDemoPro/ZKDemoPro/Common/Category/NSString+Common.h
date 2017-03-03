@@ -30,6 +30,8 @@
 /** 是否包含中文 */
 - (BOOL)containsChineseCharacter;
 
+- (NSString *)fullThumbImageURLWithMinPixel:(NSInteger)minPixel;
+
 - (float)stringWidthWithFont:(UIFont *)font height:(float)height;
 - (float)stringHeightWithFont:(UIFont *)font width:(float)width lineSpacing:(float)lineSpacing;
 - (float)stringHeightWithFont:(UIFont *)font width:(float)width;
