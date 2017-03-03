@@ -83,6 +83,7 @@ static const NSUInteger kMaxColCountPerRow = 3;
         [self addSubview:imageView];
         imageView.clipsToBounds = YES;
         imageView.contentMode = UIViewContentModeScaleAspectFill;
+        imageView.backgroundColor = GlobalBGColor;
         
         imageView.size = (imageCount == 1) ? [[self class] calculateSingleSizeWithImageSizeStr:timelineModel.imgSize] : (CGSize){picWH, picWH};
 
