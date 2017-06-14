@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		106E4323C5D9DB83442F648F /* libPods-ZKDemoPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C5E549514D882AC5209282 /* libPods-ZKDemoPro.a */; };
+		5879394C1EF0CB1A00330332 /* SDWebImageManager+ZK.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879393C1EF0CB1A00330332 /* SDWebImageManager+ZK.m */; };
+		5879394D1EF0CB1A00330332 /* UIImageView+ZKWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879393E1EF0CB1A00330332 /* UIImageView+ZKWebCache.m */; };
+		5879394E1EF0CB1A00330332 /* ZKPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5879393F1EF0CB1A00330332 /* ZKPhotoBrowser.bundle */; };
+		5879394F1EF0CB1A00330332 /* ZKPhotoLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 587939411EF0CB1A00330332 /* ZKPhotoLoadingView.m */; };
+		587939501EF0CB1A00330332 /* ZKPhotoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 587939431EF0CB1A00330332 /* ZKPhotoProgressView.m */; };
+		587939511EF0CB1A00330332 /* ZKPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 587939451EF0CB1A00330332 /* ZKPhoto.m */; };
+		587939521EF0CB1A00330332 /* ZKPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 587939471EF0CB1A00330332 /* ZKPhotoBrowser.m */; };
+		587939531EF0CB1A00330332 /* ZKPhotoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 587939491EF0CB1A00330332 /* ZKPhotoToolbar.m */; };
+		587939541EF0CB1A00330332 /* ZKPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5879394B1EF0CB1A00330332 /* ZKPhotoView.m */; };
 		58823DE61E695448006FE499 /* DataHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 58823DE51E695448006FE499 /* DataHash.m */; };
 		58B013C21E680E49000D6E2B /* data_me.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58B013C11E680E49000D6E2B /* data_me.plist */; };
 		58B013D21E681CFC000D6E2B /* USLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B013D01E681CFC000D6E2B /* USLogger.m */; };
@@ -45,15 +54,6 @@
 		58B014311E6832F4000D6E2B /* ZKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014171E6832F4000D6E2B /* ZKUser.m */; };
 		58B014341E68333A000D6E2B /* USSafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014331E68333A000D6E2B /* USSafariViewController.m */; };
 		58B014371E683532000D6E2B /* ApplicationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014361E683532000D6E2B /* ApplicationContext.m */; };
-		58B014671E683CC7000D6E2B /* SDWebImageManager+ZK.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014571E683CC7000D6E2B /* SDWebImageManager+ZK.m */; };
-		58B014681E683CC7000D6E2B /* UIImageView+ZKWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014591E683CC7000D6E2B /* UIImageView+ZKWebCache.m */; };
-		58B014691E683CC7000D6E2B /* ZKPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 58B0145A1E683CC7000D6E2B /* ZKPhotoBrowser.bundle */; };
-		58B0146A1E683CC7000D6E2B /* ZKPhotoLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B0145C1E683CC7000D6E2B /* ZKPhotoLoadingView.m */; };
-		58B0146B1E683CC7000D6E2B /* ZKPhotoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B0145E1E683CC7000D6E2B /* ZKPhotoProgressView.m */; };
-		58B0146C1E683CC7000D6E2B /* ZKPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014601E683CC7000D6E2B /* ZKPhoto.m */; };
-		58B0146D1E683CC7000D6E2B /* ZKPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014621E683CC7000D6E2B /* ZKPhotoBrowser.m */; };
-		58B0146E1E683CC7000D6E2B /* ZKPhotoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014641E683CC7000D6E2B /* ZKPhotoToolbar.m */; };
-		58B0146F1E683CC7000D6E2B /* ZKPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014661E683CC7000D6E2B /* ZKPhotoView.m */; };
 		58B014711E683E38000D6E2B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B014701E683E38000D6E2B /* WebKit.framework */; };
 		58B014A71E683EC6000D6E2B /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014761E683EC6000D6E2B /* MJRefreshAutoFooter.m */; };
 		58B014A81E683EC6000D6E2B /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B014781E683EC6000D6E2B /* MJRefreshBackFooter.m */; };
@@ -120,6 +120,23 @@
 /* Begin PBXFileReference section */
 		065D55B940D504E1559A2F5E /* Pods-ZKDemoPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKDemoPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZKDemoPro/Pods-ZKDemoPro.release.xcconfig"; sourceTree = "<group>"; };
 		08514F0BC6FBEDB00556441A /* Pods-ZKDemoPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKDemoPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZKDemoPro/Pods-ZKDemoPro.debug.xcconfig"; sourceTree = "<group>"; };
+		5879393B1EF0CB1A00330332 /* SDWebImageManager+ZK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDWebImageManager+ZK.h"; sourceTree = "<group>"; };
+		5879393C1EF0CB1A00330332 /* SDWebImageManager+ZK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDWebImageManager+ZK.m"; sourceTree = "<group>"; };
+		5879393D1EF0CB1A00330332 /* UIImageView+ZKWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZKWebCache.h"; sourceTree = "<group>"; };
+		5879393E1EF0CB1A00330332 /* UIImageView+ZKWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZKWebCache.m"; sourceTree = "<group>"; };
+		5879393F1EF0CB1A00330332 /* ZKPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZKPhotoBrowser.bundle; sourceTree = "<group>"; };
+		587939401EF0CB1A00330332 /* ZKPhotoLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKPhotoLoadingView.h; sourceTree = "<group>"; };
+		587939411EF0CB1A00330332 /* ZKPhotoLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKPhotoLoadingView.m; sourceTree = "<group>"; };
+		587939421EF0CB1A00330332 /* ZKPhotoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKPhotoProgressView.h; sourceTree = "<group>"; };
+		587939431EF0CB1A00330332 /* ZKPhotoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKPhotoProgressView.m; sourceTree = "<group>"; };
+		587939441EF0CB1A00330332 /* ZKPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKPhoto.h; sourceTree = "<group>"; };
+		587939451EF0CB1A00330332 /* ZKPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKPhoto.m; sourceTree = "<group>"; };
+		587939461EF0CB1A00330332 /* ZKPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKPhotoBrowser.h; sourceTree = "<group>"; };
+		587939471EF0CB1A00330332 /* ZKPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKPhotoBrowser.m; sourceTree = "<group>"; };
+		587939481EF0CB1A00330332 /* ZKPhotoToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKPhotoToolbar.h; sourceTree = "<group>"; };
+		587939491EF0CB1A00330332 /* ZKPhotoToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKPhotoToolbar.m; sourceTree = "<group>"; };
+		5879394A1EF0CB1A00330332 /* ZKPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKPhotoView.h; sourceTree = "<group>"; };
+		5879394B1EF0CB1A00330332 /* ZKPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKPhotoView.m; sourceTree = "<group>"; };
 		58823DE41E695448006FE499 /* DataHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHash.h; sourceTree = "<group>"; };
 		58823DE51E695448006FE499 /* DataHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHash.m; sourceTree = "<group>"; };
 		58B013C11E680E49000D6E2B /* data_me.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data_me.plist; sourceTree = "<group>"; };
@@ -179,23 +196,6 @@
 		58B014331E68333A000D6E2B /* USSafariViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USSafariViewController.m; sourceTree = "<group>"; };
 		58B014351E683532000D6E2B /* ApplicationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationContext.h; sourceTree = "<group>"; };
 		58B014361E683532000D6E2B /* ApplicationContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationContext.m; sourceTree = "<group>"; };
-		58B014561E683CC7000D6E2B /* SDWebImageManager+ZK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDWebImageManager+ZK.h"; sourceTree = "<group>"; };
-		58B014571E683CC7000D6E2B /* SDWebImageManager+ZK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDWebImageManager+ZK.m"; sourceTree = "<group>"; };
-		58B014581E683CC7000D6E2B /* UIImageView+ZKWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZKWebCache.h"; sourceTree = "<group>"; };
-		58B014591E683CC7000D6E2B /* UIImageView+ZKWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZKWebCache.m"; sourceTree = "<group>"; };
-		58B0145A1E683CC7000D6E2B /* ZKPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZKPhotoBrowser.bundle; sourceTree = "<group>"; };
-		58B0145B1E683CC7000D6E2B /* ZKPhotoLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKPhotoLoadingView.h; sourceTree = "<group>"; };
-		58B0145C1E683CC7000D6E2B /* ZKPhotoLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKPhotoLoadingView.m; sourceTree = "<group>"; };
-		58B0145D1E683CC7000D6E2B /* ZKPhotoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKPhotoProgressView.h; sourceTree = "<group>"; };
-		58B0145E1E683CC7000D6E2B /* ZKPhotoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKPhotoProgressView.m; sourceTree = "<group>"; };
-		58B0145F1E683CC7000D6E2B /* ZKPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKPhoto.h; sourceTree = "<group>"; };
-		58B014601E683CC7000D6E2B /* ZKPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKPhoto.m; sourceTree = "<group>"; };
-		58B014611E683CC7000D6E2B /* ZKPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKPhotoBrowser.h; sourceTree = "<group>"; };
-		58B014621E683CC7000D6E2B /* ZKPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKPhotoBrowser.m; sourceTree = "<group>"; };
-		58B014631E683CC7000D6E2B /* ZKPhotoToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKPhotoToolbar.h; sourceTree = "<group>"; };
-		58B014641E683CC7000D6E2B /* ZKPhotoToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKPhotoToolbar.m; sourceTree = "<group>"; };
-		58B014651E683CC7000D6E2B /* ZKPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKPhotoView.h; sourceTree = "<group>"; };
-		58B014661E683CC7000D6E2B /* ZKPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKPhotoView.m; sourceTree = "<group>"; };
 		58B014701E683E38000D6E2B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		58B014751E683EC6000D6E2B /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		58B014761E683EC6000D6E2B /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
@@ -316,6 +316,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		587939391EF0CB1A00330332 /* ZKPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				5879393A1EF0CB1A00330332 /* Supporting */,
+				587939441EF0CB1A00330332 /* ZKPhoto.h */,
+				587939451EF0CB1A00330332 /* ZKPhoto.m */,
+				587939461EF0CB1A00330332 /* ZKPhotoBrowser.h */,
+				587939471EF0CB1A00330332 /* ZKPhotoBrowser.m */,
+				587939481EF0CB1A00330332 /* ZKPhotoToolbar.h */,
+				587939491EF0CB1A00330332 /* ZKPhotoToolbar.m */,
+				5879394A1EF0CB1A00330332 /* ZKPhotoView.h */,
+				5879394B1EF0CB1A00330332 /* ZKPhotoView.m */,
+			);
+			path = ZKPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		5879393A1EF0CB1A00330332 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				5879393B1EF0CB1A00330332 /* SDWebImageManager+ZK.h */,
+				5879393C1EF0CB1A00330332 /* SDWebImageManager+ZK.m */,
+				5879393D1EF0CB1A00330332 /* UIImageView+ZKWebCache.h */,
+				5879393E1EF0CB1A00330332 /* UIImageView+ZKWebCache.m */,
+				5879393F1EF0CB1A00330332 /* ZKPhotoBrowser.bundle */,
+				587939401EF0CB1A00330332 /* ZKPhotoLoadingView.h */,
+				587939411EF0CB1A00330332 /* ZKPhotoLoadingView.m */,
+				587939421EF0CB1A00330332 /* ZKPhotoProgressView.h */,
+				587939431EF0CB1A00330332 /* ZKPhotoProgressView.m */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
 		58823DE31E695448006FE499 /* Hash */ = {
 			isa = PBXGroup;
 			children = (
@@ -441,38 +473,6 @@
 				58B0140F1E6832F4000D6E2B /* data_9.plist */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		58B014541E683CC7000D6E2B /* ZKPhotoBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				58B014551E683CC7000D6E2B /* Supporting */,
-				58B0145F1E683CC7000D6E2B /* ZKPhoto.h */,
-				58B014601E683CC7000D6E2B /* ZKPhoto.m */,
-				58B014611E683CC7000D6E2B /* ZKPhotoBrowser.h */,
-				58B014621E683CC7000D6E2B /* ZKPhotoBrowser.m */,
-				58B014631E683CC7000D6E2B /* ZKPhotoToolbar.h */,
-				58B014641E683CC7000D6E2B /* ZKPhotoToolbar.m */,
-				58B014651E683CC7000D6E2B /* ZKPhotoView.h */,
-				58B014661E683CC7000D6E2B /* ZKPhotoView.m */,
-			);
-			path = ZKPhotoBrowser;
-			sourceTree = "<group>";
-		};
-		58B014551E683CC7000D6E2B /* Supporting */ = {
-			isa = PBXGroup;
-			children = (
-				58B014561E683CC7000D6E2B /* SDWebImageManager+ZK.h */,
-				58B014571E683CC7000D6E2B /* SDWebImageManager+ZK.m */,
-				58B014581E683CC7000D6E2B /* UIImageView+ZKWebCache.h */,
-				58B014591E683CC7000D6E2B /* UIImageView+ZKWebCache.m */,
-				58B0145A1E683CC7000D6E2B /* ZKPhotoBrowser.bundle */,
-				58B0145B1E683CC7000D6E2B /* ZKPhotoLoadingView.h */,
-				58B0145C1E683CC7000D6E2B /* ZKPhotoLoadingView.m */,
-				58B0145D1E683CC7000D6E2B /* ZKPhotoProgressView.h */,
-				58B0145E1E683CC7000D6E2B /* ZKPhotoProgressView.m */,
-			);
-			path = Supporting;
 			sourceTree = "<group>";
 		};
 		58B014721E683EBA000D6E2B /* Vendors */ = {
@@ -710,7 +710,7 @@
 		58F661C01E67E60B00CEB6B9 /* ZKCustom */ = {
 			isa = PBXGroup;
 			children = (
-				58B014541E683CC7000D6E2B /* ZKPhotoBrowser */,
+				587939391EF0CB1A00330332 /* ZKPhotoBrowser */,
 				58B014321E68333A000D6E2B /* USSafariViewController.h */,
 				58B014331E68333A000D6E2B /* USSafariViewController.m */,
 				58F661F41E67EDFB00CEB6B9 /* ZKHVButton */,
@@ -900,9 +900,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				58F661AC1E67BD4B00CEB6B9 /* ZKHomeBaseViewController.xib in Resources */,
-				58B014691E683CC7000D6E2B /* ZKPhotoBrowser.bundle in Resources */,
 				58B014B81E683EC6000D6E2B /* MJRefresh.bundle in Resources */,
 				58B013E21E682907000D6E2B /* data_discover.plist in Resources */,
+				5879394E1EF0CB1A00330332 /* ZKPhotoBrowser.bundle in Resources */,
 				58B0142C1E6832F4000D6E2B /* data_8.plist in Resources */,
 				58F661741E67BB5E00CEB6B9 /* LaunchScreen.storyboard in Resources */,
 				58B0142D1E6832F4000D6E2B /* data_9.plist in Resources */,
@@ -994,11 +994,9 @@
 			files = (
 				58F661ED1E67E66700CEB6B9 /* UIButton+New.m in Sources */,
 				58B0142E1E6832F4000D6E2B /* ZKComment.m in Sources */,
-				58B0146B1E683CC7000D6E2B /* ZKPhotoProgressView.m in Sources */,
 				58B014B41E683EC6000D6E2B /* MJRefreshGifHeader.m in Sources */,
 				58F661F11E67E66700CEB6B9 /* UIView+Addition.m in Sources */,
 				58B014211E6832F4000D6E2B /* ZKRegularTool.m in Sources */,
-				58B014681E683CC7000D6E2B /* UIImageView+ZKWebCache.m in Sources */,
 				58B014341E68333A000D6E2B /* USSafariViewController.m in Sources */,
 				58B014AE1E683EC6000D6E2B /* MJRefreshAutoStateFooter.m in Sources */,
 				58B013E01E682809000D6E2B /* ZKCommonItemViewController.m in Sources */,
@@ -1009,10 +1007,8 @@
 				58B014A91E683EC6000D6E2B /* MJRefreshComponent.m in Sources */,
 				58B013DA1E68230B000D6E2B /* ZKCommonItemCell.m in Sources */,
 				58F661691E67BB5E00CEB6B9 /* AppDelegate.m in Sources */,
-				58B014671E683CC7000D6E2B /* SDWebImageManager+ZK.m in Sources */,
 				58B014B11E683EC6000D6E2B /* MJRefreshBackNormalFooter.m in Sources */,
 				58F661EB1E67E66700CEB6B9 /* NSString+Common.m in Sources */,
-				58B0146F1E683CC7000D6E2B /* ZKPhotoView.m in Sources */,
 				58B014B21E683EC6000D6E2B /* MJRefreshBackStateFooter.m in Sources */,
 				58B0141E1E6832F4000D6E2B /* ZKTimelineCellLayout.m in Sources */,
 				58B014B91E683EC6000D6E2B /* MJRefreshConst.m in Sources */,
@@ -1025,7 +1021,6 @@
 				58B0141A1E6832F4000D6E2B /* ZKTimelineCommentView.m in Sources */,
 				58B0141D1E6832F4000D6E2B /* ZKTimelineCell.m in Sources */,
 				58B013D21E681CFC000D6E2B /* USLogger.m in Sources */,
-				58B0146C1E683CC7000D6E2B /* ZKPhoto.m in Sources */,
 				58B014181E6832F4000D6E2B /* ZKTimelineCommentCell.m in Sources */,
 				58F661B91E67DD5600CEB6B9 /* CFunctionImplement.m in Sources */,
 				58F662071E67F8EA00CEB6B9 /* ZKContactViewController.m in Sources */,
@@ -1035,19 +1030,23 @@
 				58B013D61E681DC1000D6E2B /* NSDate+Common.m in Sources */,
 				58B014371E683532000D6E2B /* ApplicationContext.m in Sources */,
 				58F661AB1E67BD4B00CEB6B9 /* ZKHomeBaseViewController.m in Sources */,
-				58B0146A1E683CC7000D6E2B /* ZKPhotoLoadingView.m in Sources */,
+				587939541EF0CB1A00330332 /* ZKPhotoView.m in Sources */,
 				58B0141F1E6832F4000D6E2B /* ZKCommentBarView.m in Sources */,
+				587939511EF0CB1A00330332 /* ZKPhoto.m in Sources */,
 				58B014BD1E683EC6000D6E2B /* UIView+MJExtension.m in Sources */,
 				58B014221E6832F4000D6E2B /* ZKTextLinePositionModifier.m in Sources */,
 				58B013E81E682BB4000D6E2B /* ZKProfileHeaderCell.m in Sources */,
-				58B0146E1E683CC7000D6E2B /* ZKPhotoToolbar.m in Sources */,
+				5879394C1EF0CB1A00330332 /* SDWebImageManager+ZK.m in Sources */,
 				58B014AD1E683EC6000D6E2B /* MJRefreshAutoNormalFooter.m in Sources */,
 				58B014AA1E683EC6000D6E2B /* MJRefreshFooter.m in Sources */,
 				58B014311E6832F4000D6E2B /* ZKUser.m in Sources */,
 				58F661661E67BB5E00CEB6B9 /* main.m in Sources */,
+				5879394F1EF0CB1A00330332 /* ZKPhotoLoadingView.m in Sources */,
 				58823DE61E695448006FE499 /* DataHash.m in Sources */,
 				58B014301E6832F4000D6E2B /* ZKTimelineViewController.m in Sources */,
-				58B0146D1E683CC7000D6E2B /* ZKPhotoBrowser.m in Sources */,
+				587939531EF0CB1A00330332 /* ZKPhotoToolbar.m in Sources */,
+				5879394D1EF0CB1A00330332 /* UIImageView+ZKWebCache.m in Sources */,
+				587939501EF0CB1A00330332 /* ZKPhotoProgressView.m in Sources */,
 				58B014B01E683EC6000D6E2B /* MJRefreshBackGifFooter.m in Sources */,
 				58F661AE1E67BD4B00CEB6B9 /* ZKViewController.m in Sources */,
 				58B014AB1E683EC6000D6E2B /* MJRefreshHeader.m in Sources */,
@@ -1057,6 +1056,7 @@
 				58B014B51E683EC6000D6E2B /* MJRefreshNormalHeader.m in Sources */,
 				58F662011E67F8C700CEB6B9 /* ZKHomeViewController.m in Sources */,
 				58B014A71E683EC6000D6E2B /* MJRefreshAutoFooter.m in Sources */,
+				587939521EF0CB1A00330332 /* ZKPhotoBrowser.m in Sources */,
 				58F661F71E67EDFB00CEB6B9 /* ZKHVButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
